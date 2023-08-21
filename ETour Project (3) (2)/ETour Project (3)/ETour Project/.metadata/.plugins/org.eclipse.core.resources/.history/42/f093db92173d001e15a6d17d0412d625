@@ -1,0 +1,86 @@
+package com.example.entity;
+
+import java.util.Set;
+
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Category_Master")
+public class Category_Master {
+		@Id
+		@GeneratedValue(strategy=GenerationType.IDENTITY)
+	    private int Catmaster_id;
+		private String Cat_id;
+		private String SubCat_id;
+		private String Cat_Name;
+		private String CatImagePath;
+	
+		@OneToMany(cascade = CascadeType.ALL )
+		@JoinColumn(name = "Catmaster_id")
+		private Set<Package_Master> PackageMaster;
+		@OneToMany(cascade = CascadeType.ALL )
+		@JoinColumn(name = "Catmaster_id")
+		private Set<Date_Master> DateMaster;
+		
+		
+		public Set<Date_Master> getDateMaster() {
+			return DateMaster;
+		}
+
+		public void setDateMaster(Set<Date_Master> dateMaster) {
+			DateMaster = dateMaster;
+		}
+
+		public int getCatmaster_id() {
+			return Catmaster_id;
+		}
+		
+		public Set<Package_Master> getPackageMaster() {
+			return PackageMaster;
+		}
+		public void setPackageMaster(Set<Package_Master> packageMaster) {
+			PackageMaster = packageMaster;
+		}
+		public void setCatmaster_id(int catmaster_id) {
+			Catmaster_id = catmaster_id;
+		}
+		public String getCat_id() {
+			return Cat_id;
+		}
+		public void setCat_id(String cat_id) {
+			Cat_id = cat_id;
+		}
+		public String getSubCat_id() {
+			return SubCat_id;
+		}
+		public void setSubCat_id(String subCat_id) {
+			SubCat_id = subCat_id;
+		}
+		public String getCat_Name() {
+			return Cat_Name;
+		}
+		public void setCat_Name(String cat_Name) {
+			Cat_Name = cat_Name;
+		}
+		public String getCatImagePath() {
+			return CatImagePath;
+		}
+		public void setCatImagePath(String catImagePath) {
+			CatImagePath = catImagePath;
+		}
+
+	}
+
+
