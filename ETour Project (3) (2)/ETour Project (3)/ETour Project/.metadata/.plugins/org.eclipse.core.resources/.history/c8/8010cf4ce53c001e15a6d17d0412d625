@@ -1,0 +1,12 @@
+package com.example.repositories;
+
+@Repository
+@Transactional
+public interface ETourRepository extends JpaRepository<Tour,Integer> 
+{
+	@Modifying
+	@Query("update Tour t set t.tourname = :tourname,t.cost = :cost, t.tourtype= :tourtype where t.tourid = :tourid")
+	void update(@Param("tourname") String name,@Param("cost") int price,@Param("tourtype") String type,@Param("tourid")int id);
+	
+		
+}
