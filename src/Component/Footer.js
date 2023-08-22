@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer style={styles.footer}>
             <h2>TourIndia Travels Pvt Ltd .</h2>
-            <h6>H.O: 111 L.J.Road,Dadar, Mumbai 400028</h6>
+            <h6>H.O: 111 L.J.Road, Shruti, Mumbai 400028</h6>
             <h6>Tel.: (+91 22)  1234 5678</h6>
 
 
