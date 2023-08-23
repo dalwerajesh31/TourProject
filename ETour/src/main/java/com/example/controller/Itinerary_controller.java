@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import com.example.entity.Category_Master;
 import com.example.entity.Itinerary_Master;
 import com.example.services.Itinerary_Service;
 
@@ -32,15 +33,20 @@ public class Itinerary_controller {
     }
 
 	
-	 @PutMapping("/{id}")
-	 public void update(@RequestBody Itinerary_Master itineraryMaster, @PathVariable int id) 
-	 { 
-		 itineraryMasterService.update(itineraryMaster, id); 
-     }
+//	 @PutMapping("/{id}")
+//	 public void update(@RequestBody Itinerary_Master itineraryMaster, @PathVariable int id) 
+//	 { 
+//		 itineraryMasterService.update(itineraryMaster, id); 
+//     }
 	 
 
     @GetMapping("/{id}")
     public Optional<Itinerary_Master> getItineraryById(@PathVariable int id) {
         return itineraryMasterService.getById(id);
+    }
+    
+    @GetMapping("/ById/{id}")
+    public List<Itinerary_Master> getCategoryById(@PathVariable int id) {
+        return itineraryMasterService.findBycatMasterId(id);
     }
 }

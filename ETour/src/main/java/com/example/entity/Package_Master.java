@@ -17,45 +17,47 @@ import jakarta.persistence.Table;
 @Table(name = "Package_Master")
 public class Package_Master {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int pkg_id;
-	private String pkg_name;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int pkgId;
+    
+    private String pkgName;
+    
+    private int catMasterId;
+    
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "pkg_id")
+    private Set<Booking_Header> bookingHeaders;
 
-	private int catmaster_id;
-	@OneToMany(cascade = CascadeType.ALL )
-	@JoinColumn(name = "pkg_id")
-	private Set<Booking_Header> bookingheader;
-
-	public int getPkg_id() {
-		return pkg_id;
+	public int getPkgId() {
+		return pkgId;
 	}
 
-	public void setPkg_id(int pkg_id) {
-		this.pkg_id = pkg_id;
+	public void setPkgId(int pkgId) {
+		this.pkgId = pkgId;
 	}
 
-	public String getPkg_name() {
-		return pkg_name;
+	public String getPkgName() {
+		return pkgName;
 	}
 
-	public void setPkg_name(String pkg_name) {
-		this.pkg_name = pkg_name;
+	public void setPkgName(String pkgName) {
+		this.pkgName = pkgName;
 	}
 
-	public Set<Booking_Header> getBookingheader() {
-		return bookingheader;
+	public int getCatMasterId() {
+		return catMasterId;
 	}
 
-	public void setBookingheader(Set<Booking_Header> bookingheader) {
-		this.bookingheader = bookingheader;
+	public void setCatMasterId(int catMasterId) {
+		this.catMasterId = catMasterId;
 	}
 
-	public int getCatmaster_id() {
-		return catmaster_id;
+	public Set<Booking_Header> getBookingHeaders() {
+		return bookingHeaders;
 	}
 
-	public void setCatmaster_id(int catmaster_id) {
-		this.catmaster_id = catmaster_id;
+	public void setBookingHeaders(Set<Booking_Header> bookingHeaders) {
+		this.bookingHeaders = bookingHeaders;
 	}
 	
 	

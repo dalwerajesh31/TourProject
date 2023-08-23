@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.entity.Category_Master;
 import com.example.entity.Itinerary_Master;
 import com.example.repositories.Itinerary_MasterRepository;
 @Service
@@ -36,9 +37,15 @@ public class ItineraryMasterServiceImpl implements Itinerary_Service {
 	}
 
 	@Override
-	public void update(Itinerary_Master imaster, int itrId) {
-		repo1.update(imaster.getDay_no(),imaster.getItr_dtl(),imaster.getCatmaster_id(), itrId);
+	public List<Itinerary_Master> findBycatMasterId(int catMasterId) {
+		return repo1.findBycatMasterId(catMasterId);
 		
 	}
+
+//	@Override
+//	public void update(Itinerary_Master imaster, int itrId) {
+//		repo1.update(imaster.getDay_no(),imaster.getItr_dtl(),imaster.getCatmaster_id(), itrId);
+//		
+//	}
 
 }

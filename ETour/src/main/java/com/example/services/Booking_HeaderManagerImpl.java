@@ -40,10 +40,10 @@ public class Booking_HeaderManagerImpl implements Booking_HeaderManager
 		return repository.findById(id);
 	}
 
-	@Override
-	public void update(Booking_Header booking, int id) {
-		repository.update(booking.getBooking_date(),booking.getNoofpassanger(),booking.getTour_amount(),booking.getTaxes(),booking.getTotal_amount(),booking.getPkg_id(),booking.getDeparture_id(),booking.getCust_id(),id);;
-		
-	}
+//	@Override
+//	public void update(Booking_Header booking, int id) {
+//		repository.update(booking.getBooking_date(),booking.getNoofpassanger(),booking.getTour_amount(),booking.getTaxes(),booking.getTotal_amount(),booking.getPkg_id(),booking.getDeparture_id(),booking.getCust_id(),id);;
+//		
+//	}
 
 }

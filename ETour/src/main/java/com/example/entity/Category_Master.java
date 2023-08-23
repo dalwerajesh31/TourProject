@@ -19,103 +19,103 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="Category_Master")
 public class Category_Master {
-		@Id
-		@GeneratedValue(strategy=GenerationType.IDENTITY)
-	    private int catmaster_id;
-		private String cat_id;
-		private String subcat_id;
-		private String cat_name;
-		private String catimagepath;
-	
-		@OneToMany(cascade = CascadeType.ALL )
-		@JoinColumn(name = "catmaster_id")
-		private Set<Package_Master> packagemaster;
-		
-		@OneToMany(cascade = CascadeType.ALL )
-		@JoinColumn(name = "catmaster_id")
-		private Set<Date_Master> datemaster;
-		
-		@OneToMany(cascade = CascadeType.ALL )
-		@JoinColumn(name = "catmaster_id")
-		private Set<Cost_Master> costmaster;
-		
-		@OneToMany(cascade = CascadeType.ALL )
-		@JoinColumn(name = "catmaster_id")
-		private Set<Itinerary_Master> itinerarymaster;
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int catMasterId;
+    private String catId;
+    private String subCatId;
+    private String catName;
+    private String catImagePath;
 
-		public int getCatmaster_id() {
-			return catmaster_id;
-		}
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "catMasterId")
+    private Set<Package_Master> packageMaster;
 
-		public void setCatmaster_id(int catmaster_id) {
-			this.catmaster_id = catmaster_id;
-		}
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "catMasterId")
+    private Set<Date_Master> dateMaster;
 
-		public String getCat_id() {
-			return cat_id;
-		}
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "catMasterId")
+    private Set<Cost_Master> costMaster;
 
-		public void setCat_id(String cat_id) {
-			this.cat_id = cat_id;
-		}
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "catMasterId")
+    private Set<Itinerary_Master> itineraryMaster;
 
-		public String getSubcat_id() {
-			return subcat_id;
-		}
-
-		public void setSubcat_id(String subcat_id) {
-			this.subcat_id = subcat_id;
-		}
-
-		public String getCat_name() {
-			return cat_name;
-		}
-
-		public void setCat_name(String cat_name) {
-			this.cat_name = cat_name;
-		}
-
-		public String getCatimagepath() {
-			return catimagepath;
-		}
-
-		public void setCatimagepath(String catimagepath) {
-			this.catimagepath = catimagepath;
-		}
-
-		public Set<Package_Master> getPackagemaster() {
-			return packagemaster;
-		}
-
-		public void setPackagemaster(Set<Package_Master> packagemaster) {
-			this.packagemaster = packagemaster;
-		}
-
-		public Set<Date_Master> getDatemaster() {
-			return datemaster;
-		}
-
-		public void setDatemaster(Set<Date_Master> datemaster) {
-			this.datemaster = datemaster;
-		}
-
-		public Set<Cost_Master> getCostmaster() {
-			return costmaster;
-		}
-
-		public void setCostmaster(Set<Cost_Master> costmaster) {
-			this.costmaster = costmaster;
-		}
-
-		public Set<Itinerary_Master> getItinerarymaster() {
-			return itinerarymaster;
-		}
-
-		public void setItinerarymaster(Set<Itinerary_Master> itinerarymaster) {
-			this.itinerarymaster = itinerarymaster;
-		}
-		
-		
+	public int getCatMasterId() {
+		return catMasterId;
 	}
+
+	public void setCatMasterId(int catMasterId) {
+		this.catMasterId = catMasterId;
+	}
+
+	public String getCatId() {
+		return catId;
+	}
+
+	public void setCatId(String catId) {
+		this.catId = catId;
+	}
+
+	public String getSubCatId() {
+		return subCatId;
+	}
+
+	public void setSubCatId(String subCatId) {
+		this.subCatId = subCatId;
+	}
+
+	public String getCatName() {
+		return catName;
+	}
+
+	public void setCatName(String catName) {
+		this.catName = catName;
+	}
+
+	public String getCatImagePath() {
+		return catImagePath;
+	}
+
+	public void setCatImagePath(String catImagePath) {
+		this.catImagePath = catImagePath;
+	}
+
+	public Set<Package_Master> getPackageMaster() {
+		return packageMaster;
+	}
+
+	public void setPackageMaster(Set<Package_Master> packageMaster) {
+		this.packageMaster = packageMaster;
+	}
+
+	public Set<Date_Master> getDateMaster() {
+		return dateMaster;
+	}
+
+	public void setDateMaster(Set<Date_Master> dateMaster) {
+		this.dateMaster = dateMaster;
+	}
+
+	public Set<Cost_Master> getCostMaster() {
+		return costMaster;
+	}
+
+	public void setCostMaster(Set<Cost_Master> costMaster) {
+		this.costMaster = costMaster;
+	}
+
+	public Set<Itinerary_Master> getItineraryMaster() {
+		return itineraryMaster;
+	}
+
+	public void setItineraryMaster(Set<Itinerary_Master> itineraryMaster) {
+		this.itineraryMaster = itineraryMaster;
+	}
+		
+		
+}
 
 

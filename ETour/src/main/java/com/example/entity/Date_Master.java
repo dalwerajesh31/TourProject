@@ -15,64 +15,65 @@ import java.util.Set;
 @Entity
 @Table(name="Date_Master")
 public class Date_Master {
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int departure_id;
-	private Date depart_date;
-	private Date end_date;
-	private int no_of_days;
-	private int catmaster_id;
-	
-	@OneToMany(cascade = CascadeType.ALL )
-	@JoinColumn(name = "departure_id")
-	private Set<Booking_Header> bookingheader;
-	
-	public int getDeparture_id() {
-		return departure_id;
-	}
-
-	public void setDeparture_id(int departure_id) {
-		this.departure_id = departure_id;
-	}
-
-	public Date getDepart_date() {
-		return depart_date;
-	}
-
-	public void setDepart_date(Date depart_date) {
-		this.depart_date = depart_date;
-	}
-
-	public Date getEnd_date() {
-		return end_date;
-	}
-
-	public void setEnd_date(Date end_date) {
-		this.end_date = end_date;
-	}
-
-	public int getNo_of_days() {
-		return no_of_days;
-	}
-
-	public void setNo_of_days(int no_of_days) {
-		this.no_of_days = no_of_days;
-	}
-
-	public Set<Booking_Header> getBookingheader() {
-		return bookingheader;
-	}
-
-	public void setBookingheader(Set<Booking_Header> bookingheader) {
-		this.bookingheader = bookingheader;
-	}
-
-	public int getCatmaster_id() {
-		return catmaster_id;
-	}
-
-	public void setCatmaster_id(int catmaster_id) {
-		this.catmaster_id = catmaster_id;
-	}
+	 @Id
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private int departureId;
+	    
+	    private Date departDate;
+	    private Date endDate;
+	    private int numberOfDays;
+	    private int catMasterId;
+	    
+	    @OneToMany(cascade = CascadeType.ALL)
+	    @JoinColumn(name = "departureId")
+	    private Set<Booking_Header> bookingHeaders;
+	    
+	    public int getDepartureId() {
+	        return departureId;
+	    }
+	    
+	    public void setDepartureId(int departureId) {
+	        this.departureId = departureId;
+	    }
+	    
+	    public Date getDepartDate() {
+	        return departDate;
+	    }
+	    
+	    public void setDepartDate(Date departDate) {
+	        this.departDate = departDate;
+	    }
+	    
+	    public Date getEndDate() {
+	        return endDate;
+	    }
+	    
+	    public void setEndDate(Date endDate) {
+	        this.endDate = endDate;
+	    }
+	    
+	    public int getNumberOfDays() {
+	        return numberOfDays;
+	    }
+	    
+	    public void setNumberOfDays(int numberOfDays) {
+	        this.numberOfDays = numberOfDays;
+	    }
+	    
+	    public Set<Booking_Header> getBookingHeaders() {
+	        return bookingHeaders;
+	    }
+	    
+	    public void setBookingHeaders(Set<Booking_Header> bookingHeaders) {
+	        this.bookingHeaders = bookingHeaders;
+	    }
+	    
+	    public int getCatMasterId() {
+	        return catMasterId;
+	    }
+	    
+	    public void setCatMasterId(int catMasterId) {
+	        this.catMasterId = catMasterId;
+	    }
 	
 }

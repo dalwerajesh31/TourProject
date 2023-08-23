@@ -32,11 +32,11 @@ public class Customer_Master_Impl implements Customer_Master_Services{
 		trepository.deleteById(id);
 	}
 
-	@Override
-	public void update(Customer_Master customer, int id) {
-		trepository.update(customer.getFirst_name(),customer.getLast_name(),customer.getAge(),customer.getGender(),customer.getCountry_code(),customer.getMo_no(),customer.getAddress(),customer.getEmail(),customer.getAdhar_no(),id);
-		
-	}
+//	@Override
+//	public void update(Customer_Master customer, int id) {
+//		trepository.update(customer.getFirst_name(),customer.getLast_name(),customer.getAge(),customer.getGender(),customer.getCountry_code(),customer.getMo_no(),customer.getAddress(),customer.getEmail(),customer.getAdhar_no(),id);
+//		
+//	}
 
 	@Override
 	public Optional<Customer_Master> getById(int id) {

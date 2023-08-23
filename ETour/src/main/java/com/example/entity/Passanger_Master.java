@@ -13,76 +13,65 @@ import java.sql.Date;
 @Table(name = "Passanger_Master")
 public class Passanger_Master {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int pax_id;
-	private String pax_name;
-	private Date pax_birthdate;
-	private String pax_type;
-	private int pax_amount;
-	
-	
-	private int booking_id;
-
-
-	public int getPax_id() {
-		return pax_id;
-	}
-
-
-	public void setPax_id(int pax_id) {
-		this.pax_id = pax_id;
-	}
-
-
-	public String getPax_name() {
-		return pax_name;
-	}
-
-
-	public void setPax_name(String pax_name) {
-		this.pax_name = pax_name;
-	}
-
-
-	public Date getPax_birthdate() {
-		return pax_birthdate;
-	}
-
-
-	public void setPax_birthdate(Date pax_birthdate) {
-		this.pax_birthdate = pax_birthdate;
-	}
-
-
-	public String getPax_type() {
-		return pax_type;
-	}
-
-
-	public void setPax_type(String pax_type) {
-		this.pax_type = pax_type;
-	}
-
-
-	public int getPax_amount() {
-		return pax_amount;
-	}
-
-
-	public void setPax_amount(int pax_amount) {
-		this.pax_amount = pax_amount;
-	}
-
-
-	public int getBooking_id() {
-		return booking_id;
-	}
-
-
-	public void setBooking_id(int booking_id) {
-		this.booking_id = booking_id;
-	}
-
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int passengerId;
+    
+    private String passengerName;
+    
+    private Date birthdate;
+    
+    private String passengerType;
+    
+    private int passengerAmount;
+    
+    private int bookingId;
+    
+    public int getPassengerId() {
+        return passengerId;
+    }
+    
+    public void setPassengerId(int passengerId) {
+        this.passengerId = passengerId;
+    }
+    
+    public String getPassengerName() {
+        return passengerName;
+    }
+    
+    public void setPassengerName(String passengerName) {
+        this.passengerName = passengerName;
+    }
+    
+    public Date getBirthdate() {
+        return birthdate;
+    }
+    
+    public void setBirthdate(Date birthdate) {
+        this.birthdate = birthdate;
+    }
+    
+    public String getPassengerType() {
+        return passengerType;
+    }
+    
+    public void setPassengerType(String passengerType) {
+        this.passengerType = passengerType;
+    }
+    
+    public int getPassengerAmount() {
+        return passengerAmount;
+    }
+    
+    public void setPassengerAmount(int passengerAmount) {
+        this.passengerAmount = passengerAmount;
+    }
+    
+    public int getBookingId() {
+        return bookingId;
+    }
+    
+    public void setBookingId(int bookingId) {
+        this.bookingId = bookingId;
+    }
 	
 }

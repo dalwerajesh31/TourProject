@@ -41,10 +41,10 @@ public class DateMasterController
 	public void delete(@PathVariable int id) {
 		dservices.delete(id);
 	}
-	@PutMapping("/{id}")
-	public void update(@RequestBody Date_Master date,@PathVariable int id) {
-		dservices.update(date, id);
-	}
+//	@PutMapping("/{id}")
+//	public void update(@RequestBody Date_Master date,@PathVariable int id) {
+//		dservices.update(date, id);
+//	}
 	@GetMapping(value="/{id}")
 	public Optional<Date_Master> Get(@PathVariable int id) {
 		return dservices.getById(id);

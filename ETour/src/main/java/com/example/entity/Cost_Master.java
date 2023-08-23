@@ -14,24 +14,25 @@ import java.sql.Date;
 @Table(name="Cost_Master")
 public class Cost_Master {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int cost_id;
-	private int cost;
-	private int single_prsn_cost;
-	private int extra_prsn_cost;
-	private int child_wth_bed;
-	private int child_wto_bed;
-	private Date valid_from;
-	private Date valid_to;
-	
-	private int catmaster_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int costId;
+    
+    private int cost;
+    private int singlePersonCost;
+    private int extraPersonCost;
+    private int childWithBed;
+    private int childWithoutBed;
+    private Date validFrom;
+    private Date validTo;
+    
+    private int catMasterId;
 
-	public int getCost_id() {
-		return cost_id;
+	public int getCostId() {
+		return costId;
 	}
 
-	public void setCost_id(int cost_id) {
-		this.cost_id = cost_id;
+	public void setCostId(int costId) {
+		this.costId = costId;
 	}
 
 	public int getCost() {
@@ -42,61 +43,60 @@ public class Cost_Master {
 		this.cost = cost;
 	}
 
-	public int getSingle_prsn_cost() {
-		return single_prsn_cost;
+	public int getSinglePersonCost() {
+		return singlePersonCost;
 	}
 
-	public void setSingle_prsn_cost(int single_prsn_cost) {
-		this.single_prsn_cost = single_prsn_cost;
+	public void setSinglePersonCost(int singlePersonCost) {
+		this.singlePersonCost = singlePersonCost;
 	}
 
-	public int getExtra_prsn_cost() {
-		return extra_prsn_cost;
+	public int getExtraPersonCost() {
+		return extraPersonCost;
 	}
 
-	public void setExtra_prsn_cost(int extra_prsn_cost) {
-		this.extra_prsn_cost = extra_prsn_cost;
+	public void setExtraPersonCost(int extraPersonCost) {
+		this.extraPersonCost = extraPersonCost;
 	}
 
-	public int getChild_wth_bed() {
-		return child_wth_bed;
+	public int getChildWithBed() {
+		return childWithBed;
 	}
 
-	public void setChild_wth_bed(int child_wth_bed) {
-		this.child_wth_bed = child_wth_bed;
+	public void setChildWithBed(int childWithBed) {
+		this.childWithBed = childWithBed;
 	}
 
-	public int getChild_wto_bed() {
-		return child_wto_bed;
+	public int getChildWithoutBed() {
+		return childWithoutBed;
 	}
 
-	public void setChild_wto_bed(int child_wto_bed) {
-		this.child_wto_bed = child_wto_bed;
+	public void setChildWithoutBed(int childWithoutBed) {
+		this.childWithoutBed = childWithoutBed;
 	}
 
-	public Date getValid_from() {
-		return valid_from;
+	public Date getValidFrom() {
+		return validFrom;
 	}
 
-	public void setValid_from(Date valid_from) {
-		this.valid_from = valid_from;
+	public void setValidFrom(Date validFrom) {
+		this.validFrom = validFrom;
 	}
 
-	public Date getValid_to() {
-		return valid_to;
+	public Date getValidTo() {
+		return validTo;
 	}
 
-	public void setValid_to(Date valid_to) {
-		this.valid_to = valid_to;
+	public void setValidTo(Date validTo) {
+		this.validTo = validTo;
 	}
 
-	public int getCatmaster_id() {
-		return catmaster_id;
+	public int getCatMasterId() {
+		return catMasterId;
 	}
 
-	public void setCatmaster_id(int catmaster_id) {
-		this.catmaster_id = catmaster_id;
+	public void setCatMasterId(int catMasterId) {
+		this.catMasterId = catMasterId;
 	}
-	
-	
+    
 }

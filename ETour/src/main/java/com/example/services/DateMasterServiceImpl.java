@@ -35,10 +35,10 @@ public class DateMasterServiceImpl implements Date_MasterService{
 		return repo.findById(departureId);
 	}
 
-	@Override
-	public void update(Date_Master datemaster, int id) {
-		repo.update(datemaster.getDepart_date(),datemaster.getEnd_date(),datemaster.getNo_of_days(),datemaster.getCatmaster_id(),id);
-		
-	}
+//	@Override
+//	public void update(Date_Master datemaster, int id) {
+//		repo.update(datemaster.getDepart_date(),datemaster.getEnd_date(),datemaster.getNo_of_days(),datemaster.getCatmaster_id(),id);
+//		
+//	}
 
 }

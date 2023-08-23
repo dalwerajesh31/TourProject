@@ -56,10 +56,10 @@ public class Booking_HeaderController {
 		manager.delete(bid);
 	 }
 	 
-	 @PutMapping("/{pid}")
-	 public void updatepro(@RequestBody Booking_Header booking,@PathVariable int pid)
-	 {
-		manager.update(booking,pid);
-	 }
+//	 @PutMapping("/{pid}")
+//	 public void updatepro(@RequestBody Booking_Header booking,@PathVariable int pid)
+//	 {
+//		manager.update(booking,pid);
+//	 }
 	 
 }

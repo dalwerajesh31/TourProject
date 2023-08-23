@@ -9,6 +9,6 @@ public interface Date_MasterService {
 		public void addDate(Date_Master dateMaster);
 	    List<Date_Master> getDateMasters();
 	    void delete(int departureId);
-	    void update(Date_Master datemaster, int id);
+	    //void update(Date_Master datemaster, int id);
 	    Optional<Date_Master> getById(int departureId);
 }

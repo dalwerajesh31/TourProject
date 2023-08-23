@@ -11,6 +11,7 @@ public interface Category_MasterManager {
 	 void addCategory(Category_Master category);
 	 List<Category_Master> getAllCategory();
 	 void delete(int id);
-     void update(Category_Master cmaster,int id);
+     //void update(Category_Master cmaster,int id);
 	 Optional<Category_Master> getCategory(int id);
+	 List<Category_Master> findBycatId(String catId);
 }

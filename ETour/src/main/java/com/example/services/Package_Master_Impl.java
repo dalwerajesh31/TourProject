@@ -34,10 +34,10 @@ public class Package_Master_Impl implements Package_Services{
 		return repo.findById(departureId);
 	}
 
-	@Override
-	public void update(Package_Master pack, int id) {
-		repo.update(pack.getPkg_name(), pack.getCatmaster_id(),id);
-		
-	}
+//	@Override
+//	public void update(Package_Master pack, int id) {
+//		repo.update(pack.getPkg_name(), pack.getCatmaster_id(),id);
+//		
+//	}
 
 }

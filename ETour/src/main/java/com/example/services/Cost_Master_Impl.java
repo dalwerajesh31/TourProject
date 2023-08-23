@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.entity.Cost_Master;
+import com.example.entity.Itinerary_Master;
 import com.example.repositories.Cost_Masterrepository;
 
 @Service
@@ -52,12 +53,18 @@ public class Cost_Master_Impl implements Cost_Master_Services {
 		// TODO Auto-generated method stub
 		return trepository.findById(id);
 	}
-
+	
 	@Override
-	public void update(Cost_Master cost, int id) {
-		trepository.update(cost.getCost(), cost.getSingle_prsn_cost(), cost.getExtra_prsn_cost(), cost.getChild_wth_bed(), cost.getChild_wto_bed(), cost.getValid_from(), cost.getValid_to(), cost.getCatmaster_id(), id);
+	public List<Cost_Master> findBycatMasterId(int catMasterId) {
+		return trepository.findBycatMasterId(catMasterId);
 		
 	}
+
+//	@Override
+//	public void update(Cost_Master cost, int id) {
+//		trepository.update(cost.getCost(), cost.getSingle_prsn_cost(), cost.getExtra_prsn_cost(), cost.getChild_wth_bed(), cost.getChild_wto_bed(), cost.getValid_from(), cost.getValid_to(), cost.getCatmaster_id(), id);
+//		
+//	}
 
 
 	

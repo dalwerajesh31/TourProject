@@ -44,6 +44,12 @@ public class Category_MasterController {
 		return p;
 	 }
 	 
+	 @GetMapping("/bycatId/{name}")
+	 public List<Category_Master> getByName(@PathVariable String name)
+	 {
+		List<Category_Master> p=manager.findBycatId(name);
+		return p;
+	 }
 	 
 	
 	 @DeleteMapping("/{bid}")
@@ -52,11 +58,11 @@ public class Category_MasterController {
 		manager.delete(bid);
 	 }
 	 
-	 @PutMapping("/{id}")
-	 public void updatepro(@RequestBody Category_Master category,@PathVariable int id)
-	 {
-		manager.update(category,id);
-	 }
+//	 @PutMapping("/{id}")
+//	 public void updatepro(@RequestBody Category_Master category,@PathVariable int id)
+//	 {
+//		manager.update(category,id);
+//	 }
 	 
 
 }

@@ -39,10 +39,10 @@ public class Passanger_controller {
 		tservices.delete(id);
 	}
 
-	@PutMapping("/{id}")
-	public void update(@RequestBody Passanger_Master pack, @PathVariable int id) {
-		tservices.update(pack, id);
-	}
+//	@PutMapping("/{id}")
+//	public void update(@RequestBody Passanger_Master pack, @PathVariable int id) {
+//		tservices.update(pack, id);
+//	}
 
 	@GetMapping("/{id}")
 	public Optional<Passanger_Master> Get(@PathVariable int id) {

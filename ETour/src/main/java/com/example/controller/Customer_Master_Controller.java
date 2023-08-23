@@ -49,8 +49,8 @@ public class Customer_Master_Controller {
 		return tservices.getById(id);
 	}
 	
-	@PutMapping("/{id}")
-	public void update(@RequestBody Customer_Master cust, @PathVariable int id) {
-		tservices.update(cust, id);
-	}
+//	@PutMapping("/{id}")
+//	public void update(@RequestBody Customer_Master cust, @PathVariable int id) {
+//		tservices.update(cust, id);
+//	}
 }

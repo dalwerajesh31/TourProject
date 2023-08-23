@@ -8,6 +8,6 @@ public interface Package_Services {
 		public void addPackage(Package_Master PackageMaster);
 	    List<Package_Master> getPackageMasters();
 	    void delete(int departureId);
-	    void update(Package_Master PackageMaster, int id);
+	    //void update(Package_Master PackageMaster, int id);
 	    Optional<Package_Master> getById(int id);
 }

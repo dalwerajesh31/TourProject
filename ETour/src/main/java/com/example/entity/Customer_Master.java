@@ -15,86 +15,110 @@ import jakarta.persistence.Table;
 @Table(name="Customer_Master")
 public class Customer_Master {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int cust_id;
-	private String first_name;
-	private String last_name;
-	private int age;
-	private String gender;
-	private int country_code;
-	private long mo_no;
-	private String address;
-	private String email;
-	private long adhar_no;
-	@OneToMany(cascade = CascadeType.ALL )
-	@JoinColumn(name = "cust_id")
-	private Set<Booking_Header> bookingheader;
-	
-	public int getCust_id() {
-		return cust_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int custId;
+    
+    private String firstName;
+    private String lastName;
+    private int age;
+    private String gender;
+    private int countryCode;
+    private long mobileNumber;
+    private String address;
+    private String email;
+    private long adharNumber;
+    
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "cust_id")
+    private Set<Booking_Header> bookingHeaders;
+
+	public int getCustId() {
+		return custId;
 	}
-	public void setCust_id(int cust_id) {
-		this.cust_id = cust_id;
+
+	public void setCustId(int custId) {
+		this.custId = custId;
 	}
-	public String getFirst_name() {
-		return first_name;
+
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setFirst_name(String first_name) {
-		this.first_name = first_name;
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-	public String getLast_name() {
-		return last_name;
+
+	public String getLastName() {
+		return lastName;
 	}
-	public void setLast_name(String last_name) {
-		this.last_name = last_name;
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
+
 	public int getAge() {
 		return age;
 	}
+
 	public void setAge(int age) {
 		this.age = age;
 	}
+
 	public String getGender() {
 		return gender;
 	}
+
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public int getCountry_code() {
-		return country_code;
+
+	public int getCountryCode() {
+		return countryCode;
 	}
-	public void setCountry_code(int country_code) {
-		this.country_code = country_code;
+
+	public void setCountryCode(int countryCode) {
+		this.countryCode = countryCode;
 	}
-	public long getMo_no() {
-		return mo_no;
+
+	public long getMobileNumber() {
+		return mobileNumber;
 	}
-	public void setMo_no(long mo_no) {
-		this.mo_no = mo_no;
+
+	public void setMobileNumber(long mobileNumber) {
+		this.mobileNumber = mobileNumber;
 	}
+
 	public String getAddress() {
 		return address;
 	}
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
 	public String getEmail() {
 		return email;
 	}
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public long getAdhar_no() {
-		return adhar_no;
+
+	public long getAdharNumber() {
+		return adharNumber;
 	}
-	public void setAdhar_no(long adhar_no) {
-		this.adhar_no = adhar_no;
+
+	public void setAdharNumber(long adharNumber) {
+		this.adharNumber = adharNumber;
 	}
-	public Set<Booking_Header> getBookingheader() {
-		return bookingheader;
+
+	public Set<Booking_Header> getBookingHeaders() {
+		return bookingHeaders;
 	}
-	public void setBookingheader(Set<Booking_Header> bookingheader) {
-		this.bookingheader = bookingheader;
+
+	public void setBookingHeaders(Set<Booking_Header> bookingHeaders) {
+		this.bookingHeaders = bookingHeaders;
 	}
-	
+    
+
 }

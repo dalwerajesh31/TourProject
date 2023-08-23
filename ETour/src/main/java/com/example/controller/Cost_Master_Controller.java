@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.entity.Cost_Master;
+import com.example.entity.Itinerary_Master;
 import com.example.services.Cost_Master_Services;
 
 @RequestMapping("api/cost_master")
@@ -41,14 +42,18 @@ public class Cost_Master_Controller {
 		tservices.delete(id);
 	}
 
-	@PutMapping("/{id}")
-	public void update(@RequestBody Cost_Master cost, @PathVariable int id) {
-		tservices.update(cost, id);
-	}
+//	@PutMapping("/{id}")
+//	public void update(@RequestBody Cost_Master cost, @PathVariable int id) {
+//		tservices.update(cost, id);
+//	}
 
 	@GetMapping(value = "/{id}")
 	public Optional<Cost_Master> Get(@PathVariable int id) {
 		return tservices.getById(id);
 	}
-
+	
+    @GetMapping("/ById/{id}")
+    public List<Cost_Master> getCategoryById(@PathVariable int id) {
+        return tservices.findBycatMasterId(id);
+    }
 }

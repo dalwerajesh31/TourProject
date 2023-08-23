@@ -38,10 +38,10 @@ public class Passanger_Master_Impl implements Passanger_Services{
 		return repo.findById(departureId);
 	}
 
-	@Override
-	public void update(Passanger_Master pmaster, int id) {
-		 repo.update(pmaster.getPax_name(),pmaster.getPax_birthdate(), pmaster.getPax_type(), pmaster.getPax_amount(), pmaster.getBooking_id(),id);
-		
-	}
+//	@Override
+//	public void update(Passanger_Master pmaster, int id) {
+//		 repo.update(pmaster.getPax_name(),pmaster.getPax_birthdate(), pmaster.getPax_type(), pmaster.getPax_amount(), pmaster.getBooking_id(),id);
+//		
+//	}
 
 }

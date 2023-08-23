@@ -41,13 +41,19 @@ public class Category_MasterManagerImpl implements Category_MasterManager {
 		return repository.findById(id);
 	}
 
-	@Override
-	public void update(Category_Master cmaster, int id) {
-		repository.update(cmaster.getCat_name(),cmaster.getCatimagepath(),cmaster.getSubcat_id(),cmaster.getCat_id(),id);
-		
-	}
+//	@Override
+//	public void update(Category_Master cmaster, int id) {
+//		repository.update(cmaster.getCat_name(),cmaster.getCatimagepath(),cmaster.getSubcat_id(),cmaster.getCat_id(),id);
+//		
+//	}
 
+	@Override
+	public List<Category_Master> findBycatId(String catId) {
+		// TODO Auto-generated method stub
+		return repository.findBycatId(catId);
+	}
 	
+
 
 	
 }

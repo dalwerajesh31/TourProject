@@ -17,102 +17,81 @@ import java.util.Set;
 public class Booking_Header {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int booking_id;
-	private Date booking_date;
-	private int noofpassanger;
-	private int tour_amount;
-	private int taxes;
-	private int total_amount;
-	
-	@OneToMany(cascade = CascadeType.ALL )
-	@JoinColumn(name = "booking_id")
-	private Set<Passanger_Master> passangermaster;	
-	
-	private int pkg_id;
-	
-	private int departure_id;
-
-	private int cust_id;
-	
-	public int getPkg_id() {
-		return pkg_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int bookingId;
+    
+    private Date bookingDate;
+    private int numberOfPassengers;
+    private int tourAmount;
+    private int taxes;
+    private int totalAmount;
+    
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "bookingId")
+    private Set<Passanger_Master> passengerMaster;
+    
+    private int packageId;
+    private int departureId;
+    private int customerId;
+	public int getBookingId() {
+		return bookingId;
 	}
-
-	public void setPkg_id(int pkg_id) {
-		this.pkg_id = pkg_id;
+	public void setBookingId(int bookingId) {
+		this.bookingId = bookingId;
 	}
-
-	public int getDeparture_id() {
-		return departure_id;
+	public Date getBookingDate() {
+		return bookingDate;
 	}
-
-	public void setDeparture_id(int departure_id) {
-		this.departure_id = departure_id;
+	public void setBookingDate(Date bookingDate) {
+		this.bookingDate = bookingDate;
 	}
-
-	public int getCust_id() {
-		return cust_id;
+	public int getNumberOfPassengers() {
+		return numberOfPassengers;
 	}
-
-	public void setCust_id(int cust_id) {
-		this.cust_id = cust_id;
+	public void setNumberOfPassengers(int numberOfPassengers) {
+		this.numberOfPassengers = numberOfPassengers;
 	}
-
-	public int getBooking_id() {
-		return booking_id;
+	public int getTourAmount() {
+		return tourAmount;
 	}
-
-	public void setBooking_id(int booking_id) {
-		this.booking_id = booking_id;
+	public void setTourAmount(int tourAmount) {
+		this.tourAmount = tourAmount;
 	}
-
-	public Date getBooking_date() {
-		return booking_date;
-	}
-
-	public void setBooking_date(Date booking_date) {
-		this.booking_date = booking_date;
-	}
-
-	public int getNoofpassanger() {
-		return noofpassanger;
-	}
-
-	public void setNoofpassanger(int noofpassanger) {
-		this.noofpassanger = noofpassanger;
-	}
-
-	public int getTour_amount() {
-		return tour_amount;
-	}
-
-	public void setTour_amount(int tour_amount) {
-		this.tour_amount = tour_amount;
-	}
-
 	public int getTaxes() {
 		return taxes;
 	}
-
 	public void setTaxes(int taxes) {
 		this.taxes = taxes;
 	}
-
-	public int getTotal_amount() {
-		return total_amount;
+	public int getTotalAmount() {
+		return totalAmount;
 	}
-
-	public void setTotal_amount(int total_amount) {
-		this.total_amount = total_amount;
+	public void setTotalAmount(int totalAmount) {
+		this.totalAmount = totalAmount;
 	}
-
-	public Set<Passanger_Master> getPassangermaster() {
-		return passangermaster;
+	public Set<Passanger_Master> getPassengerMaster() {
+		return passengerMaster;
 	}
-
-	public void setPassangermaster(Set<Passanger_Master> passangermaster) {
-		this.passangermaster = passangermaster;
+	public void setPassengerMaster(Set<Passanger_Master> passengerMaster) {
+		this.passengerMaster = passengerMaster;
+	}
+	public int getPackageId() {
+		return packageId;
+	}
+	public void setPackageId(int packageId) {
+		this.packageId = packageId;
+	}
+	public int getDepartureId() {
+		return departureId;
+	}
+	public void setDepartureId(int departureId) {
+		this.departureId = departureId;
+	}
+	public int getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
 	}
 	
 }

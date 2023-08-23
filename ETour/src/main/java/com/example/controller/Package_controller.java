@@ -33,10 +33,10 @@ public class Package_controller
 	public void delete(@PathVariable int id) {
 		dservices.delete(id);
 	}
-	@PutMapping("/{id}")
-	public void update(@RequestBody Package_Master Package,@PathVariable int id) {
-		dservices.update(Package, id);
-	}
+//	@PutMapping("/{id}")
+//	public void update(@RequestBody Package_Master Package,@PathVariable int id) {
+//		dservices.update(Package, id);
+//	}
 	@GetMapping("/{id}")
 	public Optional<Package_Master> Get(@PathVariable int id) {
 		return dservices.getById(id);

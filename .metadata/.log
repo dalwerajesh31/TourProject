@@ -9449,3 +9449,548 @@ java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protoco
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 20:25:41.689
 !MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-22 20:35:06.637
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 20:42:28.025
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 20:43:15.924
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 20:43:25.405
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 20:50:09.884
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 20:52:47.100
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 20:53:34.315
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 20:55:16.058
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-08-22 20:58:33.183
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.asJavaProposals(LSJavaCompletionProposalComputer.java:78)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.computeCompletionProposals(LSJavaCompletionProposalComputer.java:50)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:378)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 20:58:45.513
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 20:59:30.110
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 20:59:39.775
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:01:50.124
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:03:11.492
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:03:24.779
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-22 21:06:30.910
+!MESSAGE Unable to compute end of document
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1054)
+	at org.eclipse.jface.text.TreeLineTracker.lineByOffset(TreeLineTracker.java:268)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1122)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:246)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:872)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOfOffset(SynchronizableDocument.java:334)
+	at org.eclipse.lsp4e.LSPEclipseUtils.toPosition(LSPEclipseUtils.java:178)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:44)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:80)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:06:37.644
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:06:41.976
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:06:47.276
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:07:03.472
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-22 21:15:29.900
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-22 21:15:34.581
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-22 21:15:37.130
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:16:10.012
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:23:52.573
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:26:23.070
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:27:02.669
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:27:49.956
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:27:56.324
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-22 21:33:35.116
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-22 21:33:38.721
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-22 21:33:45.506
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:36:18.294
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-22 21:37:45.504
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:38:24.206
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:38:53.088
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:40:31.173
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-22 21:42:34.122
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:42:55.596
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:44:35.353
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:46:10.306
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:46:55.083
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:48:53.971
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:49:21.423
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:51:29.597
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:51:32.973
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:51:37.816
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:51:43.705
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:51:46.353
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:51:50.596
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:51:54.018
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:51:57.852
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:52:19.042
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:52:59.537
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:53:07.675
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:53:19.093
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:53:26.719
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:53:35.112
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:54:09.445
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:54:22.828
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:54:34.044
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:54:48.529
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:54:57.193
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:55:05.446
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:55:16.190
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:55:20.895
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:55:29.194
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:55:34.482
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:55:49.269
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:56:02.708
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:56:11.628
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:56:19.804
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:56:28.847
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:56:38.911
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:56:46.645
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 21:56:54.165
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 22:40:26.537
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-23 10:49:31.616
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-23 10:51:13.180
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 10:51:37.069
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 10:52:50.672
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 10:52:56.781
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 10:53:03.657
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:12:51.130
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:14:58.369
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:17:35.889
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:18:37.922
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:20:23.260
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:20:34.930
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:20:59.619
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:21:18.175
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:21:23.092
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:22:46.757
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:22:51.763
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:23:40.140
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:26:56.231
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:27:25.345
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:32:42.682
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:33:15.589
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:37:18.810
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:39:20.699
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 14:41:07.659
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-23 15:06:42.853
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:12:19.216
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:23:48.179
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:24:03.381
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:24:36.379
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:24:53.972
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:26:02.885
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:27:56.592
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:28:13.120
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:33:31.226
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:38:58.642
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:40:00.670
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:40:33.546
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:40:52.104
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:55:26.100
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:55:34.391
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:55:46.769
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 15:55:57.712
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 16:05:42.884
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 16:06:06.255
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 16:08:38.367
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 16:08:54.884
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 16:09:47.825
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 16:17:08.677
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 16:17:59.342
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 16:18:30.796
+!MESSAGE Classpath changed for project: ETour
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 16:19:15.961
+!MESSAGE Classpath changed for project: ETour
