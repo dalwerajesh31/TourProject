@@ -11,7 +11,8 @@ import International from './Component/InternationalComp';
 import About from './Pages/About';
 import Domestic from './Component/Domestic';
 import RegFormComp from './Component/RegFormComp';
-
+import Login from './Component/Login';
+import PlaceDetailsComponent from './Component/PlaceDetailsComponent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,7 +28,8 @@ root.render(
           <Route path='/registration' element={<RegFormComp />} />
           <Route path='international' element={<International />} />
           <Route path='domestic' element={<Domestic />} />
-
+          <Route path='Login' element={<Login/>} />
+          <Route path='PlacedetailsComponent' element={<PlaceDetailsComponent/>} />
         </Route>
       </Routes>
     </BrowserRouter>
