@@ -8,11 +8,8 @@ import Footer from './Component/Footer';
 import Crawling from './Component/Crawling';
 
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 7f1fb131005e3d3bb380152f65649f3d6d75db10
 function App() {
   return (
     <>
