@@ -20,6 +20,16 @@ code {
   padding: 1%;
 }
 
+.d2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 50000px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+
+
 .s1{
   justify-content: center;
   align-items: center;
@@ -55,9 +65,13 @@ code {
 .carousel {
   display: flex;
   overflow: hidden;
-  width: 100%;
-  max-width: 800px; /* Adjust as needed */
-  margin: 0 auto;
+  width: 100vw;
+  margin: auto;
+  
+
+
+  
+  
 }
 
 .carousel-slide {

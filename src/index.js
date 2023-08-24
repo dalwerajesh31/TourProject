@@ -7,10 +7,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home';
-import International from './Component/InternationalComp';
 import About from './Pages/About';
-import Domestic from './Component/Domestic';
 import RegFormComp from './Component/RegFormComp';
+import SubSector from './Component/SubSector';
+import SubCatName from './Component/SubCatName';
+import PackageMaster from './Component/PackageMaster';
 
 
 
@@ -21,14 +22,23 @@ root.render(
     <BrowserRouter>
 
       <Routes>
-        <Route path='/' element={<App />} >
+         < Route path='/' element={<App />} >
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/registration' element={<RegFormComp />} />
-          <Route path='international' element={<International />} />
-          <Route path='domestic' element={<Domestic />} />
-
+          <Route path='/mylink' element={<About />} />
+          <Route path="/bycatId/:catId" element={<SubSector />} /> 
+          <Route path="/bysubcatId/:subCatId" element={<SubCatName />} /> 
+          <Route path="/bypkgId/:catMasterId" element={<PackageMaster />} /> 
+        
+          
         </Route>
+
+          
+         
+      
+
+       
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
