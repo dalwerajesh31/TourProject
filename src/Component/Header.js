@@ -14,7 +14,8 @@ function Header() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="about">about</Nav.Link>
             <Nav.Link href="registration">Register</Nav.Link>
-            <Nav.Link href="#form">Login</Nav.Link>
+            <Nav.Link href="login">Login</Nav.Link>
+            <Nav.Link href="PlaceDetailsComponent">PlaceDetailsComponent</Nav.Link>
           
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
