@@ -27,9 +27,11 @@ public class Customer_Master {
     private String address;
     private String email;
     private long adharNumber;
+    private String userName;
+    private String passWord;
     
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "cust_id")
+    @JoinColumn(name = "custId")
     private Set<Booking_Header> bookingHeaders;
 
 	public int getCustId() {
@@ -119,6 +121,19 @@ public class Customer_Master {
 	public void setBookingHeaders(Set<Booking_Header> bookingHeaders) {
 		this.bookingHeaders = bookingHeaders;
 	}
-    
+	 public String getUserName() {
+			return userName;
+	}
 
+	public void setUserName(String userName) {
+			this.userName = userName;
+	}
+
+	public String getPassWord() {
+			return passWord;
+	}
+
+	public void setPassWord(String passWord) {
+			this.passWord = passWord;
+	}
 }

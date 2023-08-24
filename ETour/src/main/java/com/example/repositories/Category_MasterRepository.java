@@ -25,7 +25,7 @@ public interface Category_MasterRepository extends JpaRepository<Category_Master
     
 
    public List<Category_Master> findBycatId(String catId);
-    
+   public List<Category_Master> findBysubCatId(String subCatId); 
     //List<Category_Master> findBycat_id(Object cat_id);
 }
 

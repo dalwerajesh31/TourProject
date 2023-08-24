@@ -25,7 +25,7 @@ public class Cost_Master {
     private Date validFrom;
     private Date validTo;
     
-    private int catMasterId;
+    private int pkgId;
 
 	public int getCostId() {
 		return costId;
@@ -91,12 +91,14 @@ public class Cost_Master {
 		this.validTo = validTo;
 	}
 
-	public int getCatMasterId() {
-		return catMasterId;
+	public int getPkgId() {
+		return pkgId;
 	}
 
-	public void setCatMasterId(int catMasterId) {
-		this.catMasterId = catMasterId;
+	public void setPkgId(int pkgId) {
+		this.pkgId = pkgId;
 	}
+
+
     
 }

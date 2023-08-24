@@ -53,6 +53,11 @@ public class Category_MasterManagerImpl implements Category_MasterManager {
 		return repository.findBycatId(catId);
 	}
 	
+	@Override
+	public List<Category_Master> findBysubCatId(String subCatId) {
+		// TODO Auto-generated method stub
+		return repository.findBysubCatId(subCatId);
+	}
 
 
 	

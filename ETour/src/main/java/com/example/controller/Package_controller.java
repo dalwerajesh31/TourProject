@@ -42,4 +42,9 @@ public class Package_controller
 		return dservices.getById(id);
 	}
 	
+	@GetMapping("catmaster/{id}")
+	public List<Package_Master> Getbycatmaster(@PathVariable int id) {
+		return dservices.getByCatmaster(id);
+	}
+	
 }

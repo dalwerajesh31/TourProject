@@ -25,8 +25,20 @@ public class Package_Master {
     private int catMasterId;
     
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "pkg_id")
+    @JoinColumn(name = "pkgId")
     private Set<Booking_Header> bookingHeaders;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "pkgId")
+    private Set<Cost_Master> costMaster;
+    
+	public Set<Cost_Master> getCostMaster() {
+		return costMaster;
+	}
+
+	public void setCostMaster(Set<Cost_Master> costMaster) {
+		this.costMaster = costMaster;
+	}
 
 	public int getPkgId() {
 		return pkgId;

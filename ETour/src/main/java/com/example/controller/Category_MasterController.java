@@ -58,6 +58,13 @@ public class Category_MasterController {
 		manager.delete(bid);
 	 }
 	 
+	 @GetMapping("/bysubcatId/{name}")
+	 public List<Category_Master> getBysubcatName(@PathVariable String name)
+	 {
+		List<Category_Master> p=manager.findBysubCatId(name);
+		return p;
+	 }
+	 
 //	 @PutMapping("/{id}")
 //	 public void updatepro(@RequestBody Category_Master category,@PathVariable int id)
 //	 {

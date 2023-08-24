@@ -37,10 +37,6 @@ public class Category_Master {
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "catMasterId")
-    private Set<Cost_Master> costMaster;
-
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "catMasterId")
     private Set<Itinerary_Master> itineraryMaster;
 
 	public int getCatMasterId() {
@@ -97,14 +93,6 @@ public class Category_Master {
 
 	public void setDateMaster(Set<Date_Master> dateMaster) {
 		this.dateMaster = dateMaster;
-	}
-
-	public Set<Cost_Master> getCostMaster() {
-		return costMaster;
-	}
-
-	public void setCostMaster(Set<Cost_Master> costMaster) {
-		this.costMaster = costMaster;
 	}
 
 	public Set<Itinerary_Master> getItineraryMaster() {

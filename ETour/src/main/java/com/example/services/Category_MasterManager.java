@@ -14,4 +14,5 @@ public interface Category_MasterManager {
      //void update(Category_Master cmaster,int id);
 	 Optional<Category_Master> getCategory(int id);
 	 List<Category_Master> findBycatId(String catId);
+	 List<Category_Master> findBysubCatId(String subCatId);
 }
