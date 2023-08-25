@@ -3,6 +3,7 @@ package com.example.entity;
 import java.util.Set;
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -26,7 +27,9 @@ public class Customer_Master {
     private long mobileNumber;
     private String address;
     private String email;
+    @Column(unique = true)
     private long adharNumber;
+    @Column(unique = true)
     private String userName;
     private String passWord;
     

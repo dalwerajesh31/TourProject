@@ -55,8 +55,8 @@ public class Cost_Master_Impl implements Cost_Master_Services {
 	}
 	
 	@Override
-	public List<Cost_Master> findBycatMasterId(int catMasterId) {
-		return trepository.findBycatMasterId(catMasterId);
+	public List<Cost_Master> findBypkgId(int pkgId) {
+		return trepository.findBypkgId(pkgId);
 		
 	}
 

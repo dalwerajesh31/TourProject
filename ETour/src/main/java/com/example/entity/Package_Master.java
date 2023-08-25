@@ -32,8 +32,20 @@ public class Package_Master {
     @JoinColumn(name = "pkgId")
     private Set<Cost_Master> costMaster;
     
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "pkgId")
+    private Set<Itinerary_Master> itineraryMaster;
+    
 	public Set<Cost_Master> getCostMaster() {
 		return costMaster;
+	}
+
+	public Set<Itinerary_Master> getItineraryMaster() {
+		return itineraryMaster;
+	}
+
+	public void setItineraryMaster(Set<Itinerary_Master> itineraryMaster) {
+		this.itineraryMaster = itineraryMaster;
 	}
 
 	public void setCostMaster(Set<Cost_Master> costMaster) {

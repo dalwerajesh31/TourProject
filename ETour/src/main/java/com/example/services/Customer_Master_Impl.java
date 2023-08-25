@@ -43,5 +43,10 @@ public class Customer_Master_Impl implements Customer_Master_Services{
 		// TODO Auto-generated method stub
 		return trepository.findById(id);
 	}
-
+	
+	@Override
+	public List<String> findByuserName(String username, String password) {
+		// TODO Auto-generated method stub
+		return trepository.findByuserName(username, password);
+	}
 }

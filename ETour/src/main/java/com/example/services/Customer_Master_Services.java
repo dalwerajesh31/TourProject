@@ -14,4 +14,5 @@ public interface Customer_Master_Services  {
 	void delete(int id);
 	//void update(Customer_Master customer,int id);
 	Optional<Customer_Master> getById(int id);
+	List<String> findByuserName(String username, String password);
 }

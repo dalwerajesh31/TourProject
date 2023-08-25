@@ -1,5 +1,6 @@
 package com.example.services;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.entity.Booking_Header;
+import com.example.entity.Category_M;
 import com.example.entity.Category_Master;
 import com.example.repositories.Category_MasterRepository;
 
@@ -48,7 +50,7 @@ public class Category_MasterManagerImpl implements Category_MasterManager {
 //	}
 
 	@Override
-	public List<Category_Master> findBycatId(String catId) {
+	public List<String> findBycatId(String catId) {
 		// TODO Auto-generated method stub
 		return repository.findBycatId(catId);
 	}
@@ -57,6 +59,35 @@ public class Category_MasterManagerImpl implements Category_MasterManager {
 	public List<Category_Master> findBysubCatId(String subCatId) {
 		// TODO Auto-generated method stub
 		return repository.findBysubCatId(subCatId);
+	}
+
+	@Override
+	public List<String> findAllDistinctCatIds() {
+		// TODO Auto-generated method stub
+		return repository.findAllDistinctCatIds();
+	
+//		List<Category_Master> categories = new ArrayList<>();
+//
+//        for (Category_M dto : cat) {
+//            Category_Master category = new Category_Master();
+//            category.setCatId(dto.getCatId());
+//            category.setCatImagePath(dto.getCatImagePath());
+//            categories.add(category);
+//        }
+//
+//        return categories;
+	}
+
+	@Override
+	public List<String> findAllDistinctsubCatIds() {
+		// TODO Auto-generated method stub
+		return repository.findAllDistinctsubCatIds();
+	}
+
+	@Override
+	public List<Category_Master> findByCatName(String name) {
+		// TODO Auto-generated method stub
+		return repository.findBysubCatId(name);
 	}
 
 

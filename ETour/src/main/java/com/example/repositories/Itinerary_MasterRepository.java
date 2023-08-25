@@ -21,6 +21,6 @@ public interface Itinerary_MasterRepository extends JpaRepository<Itinerary_Mast
 //	void update(@Param("day_no") int day_no,@Param("dtl") String dtl,@Param("catmaster_id") int catmaster_id,@Param("itr_id")int id);
 	
 @Modifying
-@Query(value = "SELECT * FROM Itinerary_Master WHERE cat_master_id = :catMasterId", nativeQuery = true)
-	public List<Itinerary_Master> findBycatMasterId(@Param("catMasterId")int catMasterId);
+@Query(value = "SELECT * FROM Itinerary_Master WHERE pkg_id = :pkgId", nativeQuery = true)
+	public List<Itinerary_Master> findBypkgId(@Param("pkgId")int pkgId);
 }

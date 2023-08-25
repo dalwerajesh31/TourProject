@@ -13,5 +13,5 @@ public interface Cost_Master_Services {
 	void delete(int id);
 	//void update(Cost_Master cost,int id);
 	Optional<Cost_Master> getById(int id);
-	List<Cost_Master> findBycatMasterId(int catMasterId);
+	List<Cost_Master> findBypkgId(int pkgId);
 }

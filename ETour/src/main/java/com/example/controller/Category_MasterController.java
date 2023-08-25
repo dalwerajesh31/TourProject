@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.entity.Category_M;
 import com.example.entity.Category_Master;
 import com.example.services.Category_MasterManager;
 @RequestMapping("api/category_master")
@@ -45,9 +46,9 @@ public class Category_MasterController {
 	 }
 	 
 	 @GetMapping("/bycatId/{name}")
-	 public List<Category_Master> getByName(@PathVariable String name)
+	 public List<String> getByName(@PathVariable String name)
 	 {
-		List<Category_Master> p=manager.findBycatId(name);
+		List<String> p=manager.findBycatId(name);
 		return p;
 	 }
 	 
@@ -65,6 +66,26 @@ public class Category_MasterController {
 		return p;
 	 }
 	 
+	 @GetMapping("/bycatnameId/{name}")
+	 public List<Category_Master> getByTourName(@PathVariable String name)
+	 {
+		List<Category_Master> p=manager.findByCatName(name);
+		return p;
+	 }
+	 
+	 @GetMapping("/bycat")
+	 public List<String> getBycatName()
+	 {
+		List<String> p=manager.findAllDistinctCatIds();
+		return p;
+	 }
+	 
+	 @GetMapping("/bysubcat")
+	 public List<String> getBysubName()
+	 {
+		List<String> p=manager.findAllDistinctsubCatIds();
+		return p;
+	 }
 //	 @PutMapping("/{id}")
 //	 public void updatepro(@RequestBody Category_Master category,@PathVariable int id)
 //	 {

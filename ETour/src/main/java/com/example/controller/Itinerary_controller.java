@@ -46,7 +46,7 @@ public class Itinerary_controller {
     }
     
     @GetMapping("/ById/{id}")
-    public List<Itinerary_Master> getCategoryById(@PathVariable int id) {
-        return itineraryMasterService.findBycatMasterId(id);
+    public List<Itinerary_Master> getPkgById(@PathVariable int id) {
+        return itineraryMasterService.findBypkgId(id);
     }
 }

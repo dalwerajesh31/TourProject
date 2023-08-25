@@ -21,6 +21,6 @@ public interface Cost_Masterrepository extends JpaRepository<Cost_Master,Integer
 //	  public void update(@Param("cost") int cost, @Param("single_prsn_cost") int single_prsn_cost, @Param("extra_prsn_cost") int extra_prsn_cost, @Param("child_wth_bed") int child_wth_bed, @Param("child_wto_bed") int child_wto_bed, @Param("valid_from") Date valid_from, @Param("valid_to") Date valid_to, @Param("catmaster_id") int catmaster_id, @Param("cost_id") int id);
 	
 	@Modifying
-	@Query(value = "SELECT * FROM Cost_Master WHERE cat_master_id = :catMasterId", nativeQuery = true)
-		public List<Cost_Master> findBycatMasterId(@Param("catMasterId")int catMasterId);
+	@Query(value = "SELECT * FROM Cost_Master WHERE pkg_id = :pkgId", nativeQuery = true)
+		public List<Cost_Master> findBypkgId(@Param("pkgId")int pkgId);
 }

@@ -27,6 +27,7 @@ public class Category_Master {
     private String catName;
     private String catImagePath;
 
+    
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "catMasterId")
     private Set<Package_Master> packageMaster;
@@ -35,9 +36,7 @@ public class Category_Master {
     @JoinColumn(name = "catMasterId")
     private Set<Date_Master> dateMaster;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "catMasterId")
-    private Set<Itinerary_Master> itineraryMaster;
+    
 
 	public int getCatMasterId() {
 		return catMasterId;
@@ -95,13 +94,7 @@ public class Category_Master {
 		this.dateMaster = dateMaster;
 	}
 
-	public Set<Itinerary_Master> getItineraryMaster() {
-		return itineraryMaster;
-	}
 
-	public void setItineraryMaster(Set<Itinerary_Master> itineraryMaster) {
-		this.itineraryMaster = itineraryMaster;
-	}
 		
 		
 }

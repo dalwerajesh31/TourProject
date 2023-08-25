@@ -53,7 +53,7 @@ public class Cost_Master_Controller {
 	}
 	
     @GetMapping("/ById/{id}")
-    public List<Cost_Master> getCategoryById(@PathVariable int id) {
-        return tservices.findBycatMasterId(id);
+    public List<Cost_Master> getPackageById(@PathVariable int id) {
+        return tservices.findBypkgId(id);
     }
 }

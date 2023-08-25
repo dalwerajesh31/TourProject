@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.entity.Cost_Master;
@@ -29,6 +30,12 @@ public class Customer_Master_Controller {
 	public void addCustomer(@RequestBody Customer_Master t)
 	{
 		tservices.addCustomer(t);
+	}
+	
+	@GetMapping("/login")
+	public List<String> authCustomer(@RequestParam String username, @RequestParam String password )
+	{
+		return tservices.findByuserName(username, password);
 	}
 	
 	@GetMapping

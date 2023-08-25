@@ -12,5 +12,5 @@ public interface Itinerary_Service {
     void delete(int itrId);
     //void update(Itinerary_Master itineraryMaster, int itrId);
     Optional<Itinerary_Master> getById(int itrId);
-    List<Itinerary_Master> findBycatMasterId(int catMasterId);
+    List<Itinerary_Master> findBypkgId(int pkgId);
 }

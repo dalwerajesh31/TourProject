@@ -37,8 +37,8 @@ public class ItineraryMasterServiceImpl implements Itinerary_Service {
 	}
 
 	@Override
-	public List<Itinerary_Master> findBycatMasterId(int catMasterId) {
-		return repo1.findBycatMasterId(catMasterId);
+	public List<Itinerary_Master> findBypkgId(int pkgId) {
+		return repo1.findBypkgId(pkgId);
 		
 	}
 

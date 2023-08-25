@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import com.example.entity.Booking_Header;
+import com.example.entity.Category_M;
 import com.example.entity.Category_Master;
 
 public interface Category_MasterManager {
@@ -13,6 +14,9 @@ public interface Category_MasterManager {
 	 void delete(int id);
      //void update(Category_Master cmaster,int id);
 	 Optional<Category_Master> getCategory(int id);
-	 List<Category_Master> findBycatId(String catId);
+	 List<String> findBycatId(String catId);
 	 List<Category_Master> findBysubCatId(String subCatId);
+	 public List<String> findAllDistinctCatIds(); 
+	 public List<String> findAllDistinctsubCatIds();
+	 List<Category_Master> findByCatName(String name); 
 }

@@ -18,10 +18,28 @@ public class Itinerary_Master {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int itineraryId;
     private int dayNumber;
+    @Column(name="itineraryDetail",length = 2000)
     private String itineraryDetail;
-    private int catMasterId;
-    
-    public int getItineraryId() {
+    private int pkgId;
+    private String imagePath;
+   
+    public int getPkgId() {
+		return pkgId;
+	}
+
+	public void setPkgId(int pkgId) {
+		this.pkgId = pkgId;
+	}
+
+	public String getImagePath() {
+		return imagePath;
+	}
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
+
+	public int getItineraryId() {
         return itineraryId;
     }
     
@@ -45,11 +63,5 @@ public class Itinerary_Master {
         this.itineraryDetail = itineraryDetail;
     }
     
-    public int getCatMasterId() {
-        return catMasterId;
-    }
     
-    public void setCatMasterId(int catMasterId) {
-        this.catMasterId = catMasterId;
-    }
 }
