@@ -9,9 +9,25 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ETourProject1
 build_property.RootNamespace = ETourProject1
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\Admin\Desktop\DotNetProject\TourProject\ETourProject1\ETourProject1\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\DotNetProject\TourProject\ETourProject1\ETourProject1
+=======
+<<<<<<< HEAD
+build_property.ProjectDir = D:\Group 7 E-Tour Project\Dotnet\TourProject\ETourProject1\ETourProject1\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Group 7 E-Tour Project\Dotnet\TourProject\ETourProject1\ETourProject1
+=======
+build_property.ProjectDir = C:\Users\Nihal\Desktop\Project_Aug28\TourProject\ETourProject1\ETourProject1\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Nihal\Desktop\Project_Aug28\TourProject\ETourProject1\ETourProject1
+>>>>>>> c61a56ca2e4536a8f1b414172ebf1feed9be1410
+>>>>>>> 3002bae84acf9cdd945bbdcc84d0f83f38727188
 build_property._RazorSourceGeneratorDebug = 
