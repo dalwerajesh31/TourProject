@@ -6,6 +6,7 @@ namespace ETourProject1.Models
 {
     public class Customer_Master
     {
+        [Key]
 
         [Required]
         public int CustId { get; set; }
@@ -46,6 +47,6 @@ namespace ETourProject1.Models
         public String PassWord { get; set; }
 
 
-      //  public ICollection<BookingHeader> bookingHeaders { get; set; }
+       // public ICollection<BookingHeader> bookingHeaders { get; set; }
     }
 }

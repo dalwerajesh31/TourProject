@@ -1,4 +1,5 @@
 ﻿
+using ETourProject1.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -20,10 +21,12 @@ namespace ETourProject1.Repository
                 optionsBuilder.UseSqlServer(@"Data Source=(localdb)\\ProjectModels;Initial Catalog=ETourDB;Integrated Security=True;");
         }
 
+
+        public DbSet<Customer_Master> Customer_Master { get; set; }
         /* 
        *     ____!!!! Data set of Poco Classes !!!_______
        *     
-       * public DbSet<Customers> Customers { get; set; }
+       * 
 
         //public DbSet<Employee> Employees { get; set; }*/
     }
