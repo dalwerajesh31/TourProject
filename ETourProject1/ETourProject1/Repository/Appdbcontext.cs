@@ -1,4 +1,5 @@
 ﻿
+using ETourProject1.Models;
 using Microsoft.EntityFrameworkCore;
 using ETourProject1.Models;
 
@@ -21,10 +22,12 @@ namespace ETourProject1.Repository
         }
         public DbSet<Date_Master> Date { get; set; }
 
+
+        public DbSet<Customer_Master> Customer_Master { get; set; }
         /* 
        *     ____!!!! Data set of Poco Classes !!!_______
        *     
-       * public DbSet<Customers> Customers { get; set; }
+       * 
 
         //public DbSet<Employee> Employees { get; set; }*/
     }

@@ -11776,11 +11776,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\chhai\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Nihal\\.nuget\\packages\\": {}
+>>>>>>> c61a56ca2e4536a8f1b414172ebf1feed9be1410
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Group 7 E-Tour Project\\Dotnet\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
       "projectName": "ETourProject1",
       "projectPath": "D:\\Group 7 E-Tour Project\\Dotnet\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
@@ -11789,6 +11794,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\chhai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
+      "projectName": "ETourProject1",
+      "projectPath": "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
+      "packagesPath": "C:\\Users\\Nihal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Nihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> c61a56ca2e4536a8f1b414172ebf1feed9be1410
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11796,6 +11811,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11868,7 +11884,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+>>>>>>> c61a56ca2e4536a8f1b414172ebf1feed9be1410
       }
     }
   }
