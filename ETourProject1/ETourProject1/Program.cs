@@ -1,3 +1,7 @@
+using ETourProject1.Repository;
+
+using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace ETourProject1
 {
@@ -10,6 +14,14 @@ namespace ETourProject1
             // Add services to the container.
 
             builder.Services.AddControllers();
+
+            // Configure DbContext and Repository
+            builder.Services.AddDbContext<Appdbcontext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            /*builder.Services.AddScoped<IItineraryMasterRepository, ItineraryMasterRepository>();
+            builder.Services.AddScoped<IItineraryMasterService, ItineraryMasterService>();*/
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -26,7 +38,6 @@ namespace ETourProject1
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
