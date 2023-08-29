@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.netApi\\ETourProject1\\ETourProject1\\ETourProject1.csproj": {}
+    "D:\\Group 7 E-Tour Project\\Dotnet\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj": {}
   },
   "projects": {
-    "D:\\.netApi\\ETourProject1\\ETourProject1\\ETourProject1.csproj": {
+    "D:\\Group 7 E-Tour Project\\Dotnet\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.netApi\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
+        "projectUniqueName": "D:\\Group 7 E-Tour Project\\Dotnet\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
         "projectName": "ETourProject1",
-        "projectPath": "D:\\.netApi\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
-        "packagesPath": "C:\\Users\\dalwe\\.nuget\\packages\\",
-        "outputPath": "D:\\.netApi\\ETourProject1\\ETourProject1\\obj\\",
+        "projectPath": "D:\\Group 7 E-Tour Project\\Dotnet\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
+        "packagesPath": "C:\\Users\\chhai\\.nuget\\packages\\",
+        "outputPath": "D:\\Group 7 E-Tour Project\\Dotnet\\TourProject\\ETourProject1\\ETourProject1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dalwe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\chhai\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -90,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

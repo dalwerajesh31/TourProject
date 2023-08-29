@@ -1,6 +1,6 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
-using System;
+using ETourProject1.Models;
 
 namespace ETourProject1.Repository
 
@@ -19,6 +19,7 @@ namespace ETourProject1.Repository
             if (!optionsBuilder.IsConfigured)
                 optionsBuilder.UseSqlServer(@"Data Source=(localdb)\\ProjectModels;Initial Catalog=ETourDB;Integrated Security=True;");
         }
+        public DbSet<Date_Master> Date { get; set; }
 
         /* 
        *     ____!!!! Data set of Poco Classes !!!_______
