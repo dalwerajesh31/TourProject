@@ -1,3 +1,11 @@
+using ETourProject1.Repository;
+
+using Microsoft.EntityFrameworkCore;
+using System;
+
+using ETourProject1.Repository;
+using Microsoft.Build.Framework;
+using Microsoft.EntityFrameworkCore;
 
 using ETourProject1.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -19,7 +27,21 @@ namespace ETourProject1
             options.UseSqlServer(builder.Configuration.GetConnectionString("ETourDbString")));
 
 
+            builder.Services.AddDbContext<Appdbcontext>(options => 
+            options.UseSqlServer(builder.Configuration.GetConnectionString("Cost_Master")));
+
+            builder.Services.AddDbContext<Category_dbcontext>(options =>
+           options.UseSqlServer(builder.Configuration.GetConnectionString("Categorydb")));
+
             builder.Services.AddControllers();
+
+            // Configure DbContext and Repository
+            builder.Services.AddDbContext<Appdbcontext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            /*builder.Services.AddScoped<IItineraryMasterRepository, ItineraryMasterRepository>();
+            builder.Services.AddScoped<IItineraryMasterService, ItineraryMasterService>();*/
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -36,7 +58,6 @@ namespace ETourProject1
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 

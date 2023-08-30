@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8yXmcmXF0d+kjRXGnmn0AeHlYZ7o2mo9gdvxzE4IObnLVaHdZMEt2fMCGE5O5qmVxe0bDJRQ182FeLasyIBcLw==",
+  "dgSpecHash": "Ex1UjD1PYqv09I3R03KVT8ZyjKHBW/gYi6PQIUWW3J2Ff4u3PTpHXA3abIHBJoeDi+mVVTPCweoimHhJuhFPhA==",
   "success": true,
   "projectFilePath": "C:\\Users\\dalwe\\OneDrive\\Desktop\\ETour_DotNet\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
   "expectedPackageFiles": [
@@ -236,5 +236,12 @@
     "C:\\Users\\dalwe\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\dalwe\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\dalwe\\OneDrive\\Desktop\\ETour_DotNet\\TourProject\\ETourProject1\\ETourProject1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

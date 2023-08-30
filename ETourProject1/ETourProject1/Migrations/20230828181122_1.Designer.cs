@@ -4,6 +4,7 @@ using ETourProject1.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ETourProject1.Migrations
 {
     [DbContext(typeof(Appdbcontext))]
-    partial class AppdbcontextModelSnapshot : ModelSnapshot
+    [Migration("20230828181122_1")]
+    partial class _1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,43 +25,6 @@ namespace ETourProject1.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-<<<<<<< HEAD
-            modelBuilder.Entity("ETourProject1.Models.BookingHeader", b =>
-                {
-                    b.Property<int>("bookingId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("bookingId"));
-
-                    b.Property<DateTime>("bookingDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("customerId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("departureId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("numberOfPassengers")
-                        .HasColumnType("int");
-
-                    b.Property<int>("packageId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("taxes")
-                        .HasColumnType("int");
-
-                    b.Property<int>("totalAmount")
-                        .HasColumnType("int");
-
-                    b.Property<int>("tourAmount")
-                        .HasColumnType("int");
-
-                    b.HasKey("bookingId");
-
-                    b.ToTable("Bookings");
-=======
             modelBuilder.Entity("ETourProject1.Models.Cost_Master", b =>
                 {
                     b.Property<int>("CostId")
@@ -94,7 +60,6 @@ namespace ETourProject1.Migrations
                     b.HasKey("CostId");
 
                     b.ToTable("Cost_Master");
->>>>>>> de3632a5b00d0d0dad8f9079b43726e3db32f183
                 });
 #pragma warning restore 612, 618
         }
