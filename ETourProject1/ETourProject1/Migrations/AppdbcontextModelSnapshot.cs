@@ -22,7 +22,6 @@ namespace ETourProject1.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-<<<<<<< HEAD
             modelBuilder.Entity("ETourProject1.Models.BookingHeader", b =>
                 {
                     b.Property<int>("bookingId")
@@ -58,45 +57,44 @@ namespace ETourProject1.Migrations
                     b.HasKey("bookingId");
 
                     b.ToTable("Bookings");
-=======
-            modelBuilder.Entity("ETourProject1.Models.Cost_Master", b =>
-                {
-                    b.Property<int>("CostId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    modelBuilder.Entity("ETourProject1.Models.Cost_Master", b =>
+                        {
+                            b.Property<int>("CostId")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CostId"));
+                            SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CostId"));
 
-                    b.Property<int>("ChildWithBed")
-                        .HasColumnType("int");
+                            b.Property<int>("ChildWithBed")
+                                .HasColumnType("int");
 
-                    b.Property<int>("ChildWithoutBed")
-                        .HasColumnType("int");
+                            b.Property<int>("ChildWithoutBed")
+                                .HasColumnType("int");
 
-                    b.Property<int>("Cost")
-                        .HasColumnType("int");
+                            b.Property<int>("Cost")
+                                .HasColumnType("int");
 
-                    b.Property<int>("ExtraPersonCost")
-                        .HasColumnType("int");
+                            b.Property<int>("ExtraPersonCost")
+                                .HasColumnType("int");
 
-                    b.Property<int>("SinglePersonCost")
-                        .HasColumnType("int");
+                            b.Property<int>("SinglePersonCost")
+                                .HasColumnType("int");
 
-                    b.Property<DateTime>("ValidFrom")
-                        .HasColumnType("datetime2");
+                            b.Property<DateTime>("ValidFrom")
+                                .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("ValidTo")
-                        .HasColumnType("datetime2");
+                            b.Property<DateTime>("ValidTo")
+                                .HasColumnType("datetime2");
 
-                    b.Property<int>("pkgId")
-                        .HasColumnType("int");
+                            b.Property<int>("pkgId")
+                                .HasColumnType("int");
 
-                    b.HasKey("CostId");
+                            b.HasKey("CostId");
 
-                    b.ToTable("Cost_Master");
->>>>>>> de3632a5b00d0d0dad8f9079b43726e3db32f183
+                            b.ToTable("Cost_Master");
+                        });
+
                 });
-#pragma warning restore 612, 618
-        }
+    }
     }
 }

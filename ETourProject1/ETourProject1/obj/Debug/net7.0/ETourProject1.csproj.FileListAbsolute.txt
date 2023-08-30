@@ -510,7 +510,6 @@ C:\Users\dalwe\OneDrive\Desktop\ETour_DotNet\TourProject\ETourProject1\ETourProj
 C:\Users\dalwe\OneDrive\Desktop\ETour_DotNet\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.genruntimeconfig.cache
 C:\Users\dalwe\OneDrive\Desktop\ETour_DotNet\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ref\ETourProject1.dll
 =======
-<<<<<<< HEAD
 C:\Users\MSIkh\Desktop\NetCore ETOURDB\Backend Net\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\MSIkh\Desktop\NetCore ETOURDB\Backend Net\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\appsettings.json
 C:\Users\MSIkh\Desktop\NetCore ETOURDB\Backend Net\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\ETourProject1.exe
@@ -766,7 +765,6 @@ C:\Users\MSIkh\Desktop\NetCore ETOURDB\Backend Net\TourProject\ETourProject1\ETo
 C:\Users\MSIkh\Desktop\NetCore ETOURDB\Backend Net\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.pdb
 C:\Users\MSIkh\Desktop\NetCore ETOURDB\Backend Net\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.genruntimeconfig.cache
 C:\Users\MSIkh\Desktop\NetCore ETOURDB\Backend Net\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ref\ETourProject1.dll
-=======
 C:\Users\Admin\Desktop\DotNetProject\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Admin\Desktop\DotNetProject\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\appsettings.json
 C:\Users\Admin\Desktop\DotNetProject\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\ETourProject1.exe
