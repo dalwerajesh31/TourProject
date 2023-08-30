@@ -510,7 +510,6 @@ C:\Users\MSIkh\Desktop\NetCore ETOURDB\Backend Net\TourProject\ETourProject1\ETo
 C:\Users\MSIkh\Desktop\NetCore ETOURDB\Backend Net\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.genruntimeconfig.cache
 C:\Users\MSIkh\Desktop\NetCore ETOURDB\Backend Net\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ref\ETourProject1.dll
 =======
-<<<<<<< HEAD
 C:\Users\Admin\Desktop\DotNetProject\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Admin\Desktop\DotNetProject\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\appsettings.json
 C:\Users\Admin\Desktop\DotNetProject\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\ETourProject1.exe
@@ -766,8 +765,6 @@ C:\Users\Admin\Desktop\DotNetProject\TourProject\ETourProject1\ETourProject1\obj
 C:\Users\Admin\Desktop\DotNetProject\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.pdb
 C:\Users\Admin\Desktop\DotNetProject\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.genruntimeconfig.cache
 C:\Users\Admin\Desktop\DotNetProject\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ref\ETourProject1.dll
-=======
-<<<<<<< HEAD
 D:\Group 7 E-Tour Project\Dotnet\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\appsettings.Development.json
 D:\Group 7 E-Tour Project\Dotnet\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\appsettings.json
 D:\Group 7 E-Tour Project\Dotnet\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\ETourProject1.exe
@@ -1023,7 +1020,6 @@ D:\Group 7 E-Tour Project\Dotnet\TourProject\ETourProject1\ETourProject1\obj\Deb
 D:\Group 7 E-Tour Project\Dotnet\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.pdb
 D:\Group 7 E-Tour Project\Dotnet\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.genruntimeconfig.cache
 D:\Group 7 E-Tour Project\Dotnet\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ref\ETourProject1.dll
-=======
 C:\Users\Nihal\Desktop\Project_Aug28\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Nihal\Desktop\Project_Aug28\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\appsettings.json
 C:\Users\Nihal\Desktop\Project_Aug28\TourProject\ETourProject1\ETourProject1\bin\Debug\net7.0\ETourProject1.exe
@@ -1282,3 +1278,13 @@ C:\Users\Nihal\Desktop\Project_Aug28\TourProject\ETourProject1\ETourProject1\obj
 >>>>>>> c61a56ca2e4536a8f1b414172ebf1feed9be1410
 >>>>>>> 3002bae84acf9cdd945bbdcc84d0f83f38727188
 >>>>>>> 4e7af376857a3c83558dae30978ac8e6caa5ea36
+C:\Users\kundan koli\OneDrive\Desktop\.Net_Project\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.csproj.AssemblyReference.cache
+C:\Users\kundan koli\OneDrive\Desktop\.Net_Project\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kundan koli\OneDrive\Desktop\.Net_Project\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.AssemblyInfoInputs.cache
+C:\Users\kundan koli\OneDrive\Desktop\.Net_Project\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.AssemblyInfo.cs
+C:\Users\kundan koli\OneDrive\Desktop\.Net_Project\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.csproj.CoreCompileInputs.cache
+C:\Users\kundan koli\OneDrive\Desktop\.Net_Project\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\kundan koli\OneDrive\Desktop\.Net_Project\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kundan koli\OneDrive\Desktop\.Net_Project\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.dll
+C:\Users\kundan koli\OneDrive\Desktop\.Net_Project\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\refint\ETourProject1.dll
+C:\Users\kundan koli\OneDrive\Desktop\.Net_Project\TourProject\ETourProject1\ETourProject1\obj\Debug\net7.0\ETourProject1.pdb

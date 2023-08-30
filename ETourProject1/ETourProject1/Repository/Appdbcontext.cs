@@ -1,7 +1,5 @@
 
-﻿using Microsoft.EntityFrameworkCore;
-
-﻿
+﻿using Microsoft.EntityFrameworkCore;﻿
 using ETourProject1.Models;
 using Microsoft.EntityFrameworkCore;
 using ETourProject1.Models;
@@ -34,17 +32,17 @@ namespace ETourProject1.Repository
         }
 
 
-<<<<<<< HEAD
+// HEAD
         public DbSet<Cost_Master> Cost { get; set; }
 
 
 
-=======
+
         public DbSet<Date_Master> Date { get; set; }
 
 
         public DbSet<Customer_Master> Customer_Master { get; set; }
->>>>>>> 4e7af376857a3c83558dae30978ac8e6caa5ea36
+// 4e7af376857a3c83558dae30978ac8e6caa5ea36
         /* 
        *     ____!!!! Data set of Poco Classes !!!_______
        *     

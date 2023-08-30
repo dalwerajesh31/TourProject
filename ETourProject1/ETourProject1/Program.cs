@@ -20,6 +20,9 @@ namespace ETourProject1
             builder.Services.AddDbContext<Appdbcontext>(options => 
             options.UseSqlServer(builder.Configuration.GetConnectionString("Cost_Master")));
 
+            builder.Services.AddDbContext<Category_dbcontext>(options =>
+           options.UseSqlServer(builder.Configuration.GetConnectionString("Categorydb")));
+
             builder.Services.AddControllers();
 
             // Configure DbContext and Repository
