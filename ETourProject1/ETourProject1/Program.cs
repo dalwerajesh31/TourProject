@@ -1,4 +1,8 @@
 
+using ETourProject1.Repository;
+using Microsoft.Build.Framework;
+using Microsoft.EntityFrameworkCore;
+
 namespace ETourProject1
 {
     public class Program
@@ -8,6 +12,9 @@ namespace ETourProject1
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+            builder.Services.AddDbContext<Appdbcontext>(options => 
+            options.UseSqlServer(builder.Configuration.GetConnectionString("Cost_Master")));
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

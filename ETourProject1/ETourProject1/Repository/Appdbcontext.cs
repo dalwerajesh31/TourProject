@@ -1,4 +1,5 @@
 ﻿
+using ETourProject1.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -19,6 +20,11 @@ namespace ETourProject1.Repository
             if (!optionsBuilder.IsConfigured)
                 optionsBuilder.UseSqlServer(@"Data Source=(localdb)\\ProjectModels;Initial Catalog=ETourDB;Integrated Security=True;");
         }
+
+
+        public DbSet<Cost_Master> Cost { get; set; }
+
+
 
         /* 
        *     ____!!!! Data set of Poco Classes !!!_______
