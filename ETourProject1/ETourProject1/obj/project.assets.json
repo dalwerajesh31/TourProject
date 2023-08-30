@@ -11780,11 +11780,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.netApi\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
+      "projectUniqueName": "C:\\Users\\dalwe\\OneDrive\\Desktop\\ETour_DotNet\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
       "projectName": "ETourProject1",
-      "projectPath": "D:\\.netApi\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
+      "projectPath": "C:\\Users\\dalwe\\OneDrive\\Desktop\\ETour_DotNet\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
       "packagesPath": "C:\\Users\\dalwe\\.nuget\\packages\\",
-      "outputPath": "D:\\.netApi\\ETourProject1\\ETourProject1\\obj\\",
+      "outputPath": "C:\\Users\\dalwe\\OneDrive\\Desktop\\ETour_DotNet\\TourProject\\ETourProject1\\ETourProject1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dalwe\\AppData\\Roaming\\NuGet\\NuGet.Config",
