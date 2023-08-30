@@ -35,8 +35,8 @@ namespace ETourProject1.Models
         public int pkgId { get; set; }
 
 
-        /*[ForeignKey("PkgId")]
-        public Package_Master Package_Master { get; set; }*/
+        [ForeignKey("PkgId")]
+        public Package_master Package_Master { get; set; }
 
     }
 }
