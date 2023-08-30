@@ -1,7 +1,7 @@
-
-﻿using Microsoft.EntityFrameworkCore;
-
-﻿
+using Microsoft.EntityFrameworkCore;﻿
+using ETourProject1.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using ETourProject1.Models;
 using Microsoft.EntityFrameworkCore;
 using ETourProject1.Models;
@@ -18,10 +18,14 @@ namespace ETourProject1.Repository
         public DbSet<Package_master> Packages { get; set; }
 
         // Add DbSet properties for your entities
-        public DbSet<Itinerary_Master> ItineraryMasters { get; set; }
+        public DbSet<Itinerary_Master> Itinerary_Master{ get; set; }
 
         // Add the repository interface as a property
-        public Itinerary_MasterInterface ItineraryMasterRepository { get; private set; }
+        public Itinerary_MasterInterface ItineraryMasterRepository { get;  set; }
+
+
+        public DbSet<Customer_Master> Customer_Master { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -34,17 +38,19 @@ namespace ETourProject1.Repository
         }
 
 
-<<<<<<< HEAD
+        public DbSet<BookingHeader> Bookings { get; set; }
+
         public DbSet<Cost_Master> Cost { get; set; }
 
 
 
-=======
+
+
         public DbSet<Date_Master> Date { get; set; }
 
 
-        public DbSet<Customer_Master> Customer_Master { get; set; }
->>>>>>> 4e7af376857a3c83558dae30978ac8e6caa5ea36
+      
+// 4e7af376857a3c83558dae30978ac8e6caa5ea36
         /* 
        *     ____!!!! Data set of Poco Classes !!!_______
        *     
