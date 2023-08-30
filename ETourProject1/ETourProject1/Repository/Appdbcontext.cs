@@ -1,10 +1,9 @@
-<<<<<<< HEAD
+
 ﻿using Microsoft.EntityFrameworkCore;
-=======
+
 ﻿
 using ETourProject1.Models;
 using Microsoft.EntityFrameworkCore;
->>>>>>> 3002bae84acf9cdd945bbdcc84d0f83f38727188
 using ETourProject1.Models;
 
 namespace ETourProject1.Repository
@@ -15,6 +14,8 @@ namespace ETourProject1.Repository
         {
 
         }
+
+        public DbSet<Package_master> Packages { get; set; }
 
         // Add DbSet properties for your entities
         public DbSet<Itinerary_Master> ItineraryMasters { get; set; }
@@ -31,8 +32,8 @@ namespace ETourProject1.Repository
 
             base.OnModelCreating(modelBuilder);
         }
-<<<<<<< HEAD
-=======
+
+
         public DbSet<Date_Master> Date { get; set; }
 
 
@@ -43,6 +44,6 @@ namespace ETourProject1.Repository
        * 
 
         //public DbSet<Employee> Employees { get; set; }*/
->>>>>>> 3002bae84acf9cdd945bbdcc84d0f83f38727188
+
     }
 }
