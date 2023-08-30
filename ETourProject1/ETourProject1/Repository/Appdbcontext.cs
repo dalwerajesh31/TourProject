@@ -1,10 +1,10 @@
-<<<<<<< HEAD
+
 ﻿using Microsoft.EntityFrameworkCore;
-=======
+
 ﻿
 using ETourProject1.Models;
 using Microsoft.EntityFrameworkCore;
->>>>>>> 3002bae84acf9cdd945bbdcc84d0f83f38727188
+
 using ETourProject1.Models;
 
 namespace ETourProject1.Repository
@@ -17,10 +17,10 @@ namespace ETourProject1.Repository
         }
 
         // Add DbSet properties for your entities
-        public DbSet<Itinerary_Master> ItineraryMasters { get; set; }
+        public DbSet<Itinerary_Master> Itinerary_Master{ get; set; }
 
         // Add the repository interface as a property
-        public Itinerary_MasterInterface ItineraryMasterRepository { get; private set; }
+        public Itinerary_MasterInterface ItineraryMasterRepository { get;  set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -31,8 +31,8 @@ namespace ETourProject1.Repository
 
             base.OnModelCreating(modelBuilder);
         }
-<<<<<<< HEAD
-=======
+
+
         public DbSet<Date_Master> Date { get; set; }
 
 
@@ -43,6 +43,6 @@ namespace ETourProject1.Repository
        * 
 
         //public DbSet<Employee> Employees { get; set; }*/
->>>>>>> 3002bae84acf9cdd945bbdcc84d0f83f38727188
+
     }
 }

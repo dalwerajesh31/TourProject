@@ -20,11 +20,10 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.32.2" />
   </ItemGroup>
 
-<<<<<<< HEAD
+
   <ItemGroup>
     <Folder Include="Services\" />
   </ItemGroup>
 
-=======
->>>>>>> 3002bae84acf9cdd945bbdcc84d0f83f38727188
+
 </Project>
