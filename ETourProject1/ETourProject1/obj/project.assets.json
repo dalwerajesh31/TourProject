@@ -11776,12 +11776,17 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "C:\\Users\\Nihal\\.nuget\\packages\\": {}
+>>>>>>> 608c68b2eeca3754cb3025811b353e9eaafff2c5
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Admin\\Desktop\\DotNetProject\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
       "projectName": "ETourProject1",
       "projectPath": "C:\\Users\\Admin\\Desktop\\DotNetProject\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
@@ -11794,6 +11799,16 @@
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+      "projectUniqueName": "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
+      "projectName": "ETourProject1",
+      "projectPath": "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
+      "packagesPath": "C:\\Users\\Nihal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Nihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 608c68b2eeca3754cb3025811b353e9eaafff2c5
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
