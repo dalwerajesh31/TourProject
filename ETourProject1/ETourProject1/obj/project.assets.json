@@ -11776,19 +11776,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MSIkh\\.nuget\\packages\\": {}
+    "C:\\Users\\Nihal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MSIkh\\Desktop\\NetCore ETOURDB\\Backend Net\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
+      "projectUniqueName": "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
       "projectName": "ETourProject1",
-      "projectPath": "C:\\Users\\MSIkh\\Desktop\\NetCore ETOURDB\\Backend Net\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
-      "packagesPath": "C:\\Users\\MSIkh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MSIkh\\Desktop\\NetCore ETOURDB\\Backend Net\\TourProject\\ETourProject1\\ETourProject1\\obj\\",
+      "projectPath": "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
+      "packagesPath": "C:\\Users\\Nihal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MSIkh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11872,13 +11872,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\MSIkh\\Desktop\\NetCore ETOURDB\\Backend Net\\TourProject\\ETourProject1\\ETourProject1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
