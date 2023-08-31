@@ -7,8 +7,6 @@ using ETourProject1.Repository;
 using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore;
 
-using ETourProject1.Repository;
-using Microsoft.EntityFrameworkCore;
 
 namespace ETourProject1
 {

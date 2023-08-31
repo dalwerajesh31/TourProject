@@ -42,40 +42,7 @@ namespace ETourProject1.Controllers
             return date == null ? NotFound() : dateEntity ;
         }
 
-        // PUT: api/Date_Master/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutBook(int id, Date_Master date)
-        {
-            if (id != date.DepartureId)
-            {
-                return BadRequest();
-            }
-
-            try
-            {
-                var updatedDate = await _context.Update(id, date);
-                if (updatedDate == null)
-                {
-                    return NotFound();
-                }
-
-                return NoContent();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                var dateActionResult = await _context.GetDate(id);
-                if (dateActionResult.Value == null)
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-        }
-
+       
 
         // POST: api/Date_Master
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -84,20 +51,8 @@ namespace ETourProject1.Controllers
         public async Task<ActionResult<Date_Master>> Date_Master(Date_Master date)
         {
             await _context.Add(date);
-            return CreatedAtAction("PostBook", new { id = date.DepartureId }, date);
+            return CreatedAtAction("PostDate", new { id = date.DepartureId }, date);
         }
-        // DELETE: api/Date_Master/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
-        {
-            if (_context.GetAllDate_Master() == null)
-            {
-                return NotFound();
-            }
-
-            await _context.Delete(id);
-            return NoContent();
-        }
-
+       
     }
 }
