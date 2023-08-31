@@ -51,9 +51,4 @@ namespace ETourProject1.Repository
     }
 }
 
-/*this is from rohit  Nanher 
- I love fucing people 
-fuck all people  
-is it not cool 
-fuck you 
-*/
+
