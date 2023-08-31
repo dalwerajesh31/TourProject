@@ -12,6 +12,6 @@ namespace ETourProject1.Models
         public DateTime EndDate { get; set; }
         public int NumberOfDays { get; set; }
         public int pkgId { get; set; }
-    //    public ICollection<Booking_Header> BookingHeaders { get; set; }
+        public ICollection<BookingHeader> BookingHeaders { get; set; }
     }
 }

@@ -81,7 +81,7 @@ namespace ETourProject1.Controllers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
 
         [HttpPost]
-        public async Task<ActionResult<Date_Master>> PostBook(Date_Master date)
+        public async Task<ActionResult<Date_Master>> Date_Master(Date_Master date)
         {
             await _context.Add(date);
             return CreatedAtAction("PostBook", new { id = date.DepartureId }, date);
