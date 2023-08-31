@@ -9,10 +9,7 @@ namespace ETourProject1.Repository
         Task<ActionResult<IEnumerable<Cost_Master>>> GetAllCost();
         Task<ActionResult<Cost_Master>> Add(Cost_Master cost);
 
-        Task<Cost_Master> Update(int id,Cost_Master costchanges);
-        Task<Cost_Master> Delete(int Id);
-
-      
+ 
 
     }
 }

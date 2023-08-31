@@ -24,11 +24,11 @@ namespace ETourProject1.Repository
             return customer;
         }
 
+        /*public Task<Customer_Master> Delete(int id)
+        {
+            throw new NotImplementedException();
+        }*/
 
-       
-
-
-      
         public async Task<Customer_Master> GetById(int id)
         {
 
@@ -46,25 +46,7 @@ namespace ETourProject1.Repository
           
         }
 
-       
-
-
-
-        public async Task<Customer_Master> Delete(int id)
-        {
-            Customer_Master customer = context.Customer_Master.Find(id);
-            if (customer != null)
-            {
-                context.Customer_Master.Remove(customer);
-
-                await context.SaveChangesAsync();
-            }
-            return customer;
-        }
-
-
-
-
+    
         public async Task<ActionResult<IEnumerable<Customer_Master>?>> GetCustomers()
         {
             if (context.Customer_Master == null)
@@ -75,5 +57,20 @@ namespace ETourProject1.Repository
             return await context.Customer_Master.ToListAsync();
         }
 
+        Task<ActionResult<Customer_Master>> ICustomer_MasterInterface.AddCustomer(Customer_Master customer)
+        {
+            throw new NotImplementedException();
+        }
+
+ 
+        Task<Customer_Master> ICustomer_MasterInterface.GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<ActionResult<IEnumerable<Customer_Master>?>> ICustomer_MasterInterface.GetCustomers()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

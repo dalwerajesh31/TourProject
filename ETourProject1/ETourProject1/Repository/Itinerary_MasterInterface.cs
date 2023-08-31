@@ -10,7 +10,6 @@ namespace ETourProject1.Repository
         IEnumerable<Itinerary_Master> GetAll();
         Itinerary_Master GetById(int id);
         void Add(Itinerary_Master itinerary);
-        void Update(Itinerary_Master itinerary);
-        void Delete(int id);
+      
     }
 }

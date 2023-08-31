@@ -50,7 +50,6 @@ namespace ETourProject1.Controllers
             return customer_Master;
         }
 
-     
 
         // POST: api/Customer_Master
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

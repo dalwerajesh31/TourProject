@@ -19,18 +19,10 @@ namespace ETourProject1.Models
 
 
 
-        public ICollection<Booking_Header> BookingHeaders { get; set; }
-        //this is for date_master
+       /* public ICollection<Booking_Header> BookingHeaders { get; set; }
+        //this is for date_master*/
 
-        [ForeignKey(name: "DepartureId")]
-        public int DepartureId { get; set; }
-        //this is for booking_header
-
-       
-
-
-        public ICollection<passanger_master> passanger_Masters { get; set; }
-        //for booking_header
+        
 
 
         [ForeignKey(name: "booking_Id")]

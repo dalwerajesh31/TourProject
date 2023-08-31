@@ -12,8 +12,6 @@ namespace ETourProject1.Repository
 
         Task<Customer_Master> GetById(int id);
 
-        Task<Customer_Master> Delete(int id);
-
         Task<ActionResult<IEnumerable<Customer_Master>?>> GetCustomers();
 
 

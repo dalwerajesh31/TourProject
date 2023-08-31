@@ -33,25 +33,6 @@ namespace ETourProject1.Repository
             _dbContext.SaveChanges();
         }
 
-        public void Update(Itinerary_Master itinerary)
-        {
-            _dbContext.Entry(itinerary).State = EntityState.Modified;
-            _dbContext.SaveChanges();
-        }
-
-        public void Delete(int id)
-        {
-            var itinerary = _dbContext.Itinerary_Master.Find(id);
-            if (itinerary != null)
-            {
-                _dbContext.Itinerary_Master.Remove(itinerary);
-                _dbContext.SaveChanges();
-            }
-        }
+      
     }
 }
-
-<<<<<<< HEAD
-=======
-
->>>>>>> cf7cac16c48e3ea83265a88018206e5fd9fb91c1

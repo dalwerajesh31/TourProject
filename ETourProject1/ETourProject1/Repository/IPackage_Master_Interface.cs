@@ -8,8 +8,7 @@ namespace ETourProject1.Repository
     {
         Task<ActionResult<Package_master>>AddPackage(Package_master packageMaster);
         Task<ActionResult<IEnumerable<Package_master>>> GetPackageMasters();
-        Task<Package_master> Delete(int id);
-        Task<Package_master> Update(Package_master packageMaster, int id);
+
         Task<ActionResult<Package_master>?> GetById(int id);
         //Task<ActionResult<IEnumerable<Package_master>>> getByCatmaster(int id);
     }

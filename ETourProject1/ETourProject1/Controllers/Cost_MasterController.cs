@@ -27,10 +27,10 @@ namespace ETourProject1.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cost_Master>>> GetCost()
         {
-          if (await _repository.GetAllCost() == null)
-          {
-              return NotFound();
-          }
+            if (await _repository.GetAllCost() == null)
+            {
+                return NotFound();
+            }
             return await _repository.GetAllCost();
         }
 
@@ -43,7 +43,7 @@ namespace ETourProject1.Controllers
         }
 
 
-     
+
 
         // POST: api/Cost_Master
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -55,27 +55,5 @@ namespace ETourProject1.Controllers
             return CreatedAtAction("GetCost_Master", new { id = cost.CostId }, cost);
         }
 
-<<<<<<< HEAD
-      
-
-        /*private bool Cost_MasterExists(int id)           // Mark For Review
-        {
-            return (_repository.?.Any(e => e.CostId == id)).GetValueOrDefault();
-        }*/
-=======
-        // DELETE: api/Cost_Master/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCost_Master(int id)
-        {
-            if (_repository.GetAllCost() == null)
-            {
-                return NotFound();
-            }
-
-            await _repository.Delete(id);
-
-            return Ok();
-        }
->>>>>>> cf7cac16c48e3ea83265a88018206e5fd9fb91c1
     }
 }

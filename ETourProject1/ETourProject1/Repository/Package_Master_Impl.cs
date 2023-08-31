@@ -16,16 +16,7 @@ namespace ETourProject1.Repository
             return package;
         }
 
-        public async Task<Package_master> Delete(int id)
-        {
-            Package_master package = context.Packages.Find(id);
-            if (package != null)
-            {
-                context.Packages.Remove(package);
-                await context.SaveChangesAsync();
-            }
-            return package;
-        }
+        
 
         /*public Task<ActionResult<IEnumerable<Package_master>>> getByCatmaster(int id)
         {
@@ -57,33 +48,7 @@ namespace ETourProject1.Repository
             return await context.Packages.ToListAsync();
         }
 
-        public async Task<Package_master> Update(Package_master packageMaster, int id)
-        {
-            if (id != packageMaster.PkgId)
-            {
-                return null;
-            }
-            context.Entry(packageMaster).State = EntityState.Modified;
-
-            try
-            {
-                context.Update(packageMaster);
-                await context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!PackageExists(id))
-                {
-                    return null;
-                }
-                else
-                {
-                    throw;
-                }
-            }
-            return null;
-
-        }
+        
         private bool PackageExists(int id)
         {
             return (context.Packages?.Any(e => e.PkgId == id)).GetValueOrDefault();

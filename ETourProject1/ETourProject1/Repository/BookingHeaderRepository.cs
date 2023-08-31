@@ -19,19 +19,7 @@ namespace ETourProject1.Repository
             return booking;
         }
 
-        public async Task<BookingHeader> Delete(int Id)
-        {
-            BookingHeader booking = context.Bookings.Find(Id);
-
-            if (booking != null)
-            {
-                context.Bookings.Remove(booking);
-                await context.SaveChangesAsync();
-            }
-
-            return booking;
-        }
-
+       
         public async Task<ActionResult<IEnumerable<BookingHeader>>> GetAllBookings()
         {
             if (context.Bookings == null)
@@ -49,29 +37,6 @@ namespace ETourProject1.Repository
             if(booking == null)
                 return null;
             return booking;
-        }
-
-        public async Task<BookingHeader> Update(int id, BookingHeader bookingchanges)
-        {
-            if (id != bookingchanges.bookingId)
-                return null;
-
-            context.Entry(bookingchanges).State = EntityState.Modified;
-
-            try
-            {
-                await context.SaveChangesAsync();
-            }
-
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!BookingExists(id))
-                    return null;
-                else
-                    throw;
-            }
-
-            return null;
         }
 
         public bool BookingExists(int id)
