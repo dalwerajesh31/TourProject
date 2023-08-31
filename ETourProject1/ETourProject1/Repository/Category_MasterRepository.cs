@@ -40,9 +40,9 @@ namespace ETourProject1.Repository
 
         public class Category_MasterRepository : ICategory_MasterInterface
         {
-            private readonly Category_dbcontext context;
+            private readonly Appdbcontext context;
 
-            public Category_MasterRepository(Category_dbcontext context)
+            public Category_MasterRepository(Appdbcontext context)
             {
                 this.context = context;
             }
@@ -51,17 +51,6 @@ namespace ETourProject1.Repository
             {
                 context.Category.Add(category);
                 await context.SaveChangesAsync();
-                return category;
-            }
-
-            public async Task<Category_Master> Delete(int id)
-            {
-                Category_Master category = await context.Category.FindAsync(id); // Fix variable name and use await
-                if (category != null)
-                {
-                    context.Category.Remove(category);
-                    await context.SaveChangesAsync();
-                }
                 return category;
             }
 
@@ -85,30 +74,6 @@ namespace ETourProject1.Repository
                 return category;
             }
 
-            public async Task<Category_Master> Update(int id, Category_Master category)
-            {
-                if (id != category.catMasterID)
-                {
-                    return null;
-                }
-                context.Entry(category).State = EntityState.Modified;
-                try
-                {
-                    await context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!CategoryExists(id))
-                    {
-                        return null;
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return category;
-            }
 
             private bool CategoryExists(int id)
             {

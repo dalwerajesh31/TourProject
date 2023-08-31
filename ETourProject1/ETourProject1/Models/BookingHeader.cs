@@ -15,6 +15,8 @@ namespace ETourProject1.Models
         public int departureId { get; set; }
         public int customerId { get; set; }
 
-      /*  public ICollection<PassangerMaster>? passengerMaster { get; set; }*/
+        /*  public ICollection<PassangerMaster>? passengerMaster { get; set; }*/
+         public ICollection<BookingHeader> BookingHeaders { get; set; }
+          //this is for date_master
     }
 }

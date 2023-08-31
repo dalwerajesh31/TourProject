@@ -27,10 +27,10 @@ namespace ETourProject1.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cost_Master>>> GetCost()
         {
-          if (await _repository.GetAllCost() == null)
-          {
-              return NotFound();
-          }
+            if (await _repository.GetAllCost() == null)
+            {
+                return NotFound();
+            }
             return await _repository.GetAllCost();
         }
 
@@ -43,36 +43,7 @@ namespace ETourProject1.Controllers
         }
 
 
-        // PUT: api/Cost_Master/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutCost_Master(int id, Cost_Master cost)
-        {
-            if (id != cost.CostId)
-            {
-                return BadRequest();
-            }
 
-           // _repository.Entry(cost_Master).State = EntityState.Modified;
-
-            try
-            {
-                await _repository.Update(id, cost);
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (_repository.GetCost(id) == null)
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
 
         // POST: api/Cost_Master
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -84,18 +55,5 @@ namespace ETourProject1.Controllers
             return CreatedAtAction("GetCost_Master", new { id = cost.CostId }, cost);
         }
 
-        // DELETE: api/Cost_Master/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCost_Master(int id)
-        {
-            if (_repository.GetAllCost() == null)
-            {
-                return NotFound();
-            }
-
-            await _repository.Delete(id);
-
-            return Ok();
-        }
     }
 }

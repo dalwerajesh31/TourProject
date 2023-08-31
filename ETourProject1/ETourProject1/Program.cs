@@ -1,11 +1,7 @@
 using ETourProject1.Repository;
-
 using Microsoft.EntityFrameworkCore;
-using System;
 
-using ETourProject1.Repository;
-using Microsoft.Build.Framework;
-using Microsoft.EntityFrameworkCore;
+using WebApplicationOneToMany.Models;
 
 
 namespace ETourProject1
@@ -19,32 +15,28 @@ namespace ETourProject1
             builder.Services.AddControllers();
 
             builder.Services.AddTransient<IBookingHeaderRepository, BookingHeaderRepository>();
-
-            // Add services to the container.
-            builder.Services.AddDbContext<Appdbcontext>(options => 
-            options.UseSqlServer(builder.Configuration.GetConnectionString("ETourDbString")));
-
-
-            builder.Services.AddDbContext<Appdbcontext>(options => 
-            options.UseSqlServer(builder.Configuration.GetConnectionString("Cost_Master")));
+            builder.Services.AddTransient<ICategory_MasterInterface, Category_MasterRepository>();
+            builder.Services.AddTransient<ICost_MasterInterface, Cost_MasterRepository>();
+            builder.Services.AddTransient<ICustomer_MasterInterface, Customer_MasterRepository>();
+            builder.Services.AddTransient<IDate_Masterinterface, SQLDateMasterRepository>();
+            builder.Services.AddTransient<IPackage_Master_Interface, Package_Master_Impl>();
+          builder.Services.AddTransient<Itinerary_MasterInterface, ItineraryRepository>();
+          
 
             builder.Services.AddDbContext<Appdbcontext>(options =>
-           options.UseSqlServer(builder.Configuration.GetConnectionString("Customer_Master")));
-
-            builder.Services.AddDbContext<Category_dbcontext>(options =>
-           options.UseSqlServer(builder.Configuration.GetConnectionString("Categorydb")));
-
-            builder.Services.AddControllers();
-
-            // Configure DbContext and Repository
-            builder.Services.AddDbContext<Appdbcontext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-            /*builder.Services.AddScoped<IItineraryMasterRepository, ItineraryMasterRepository>();
-            builder.Services.AddScoped<IItineraryMasterService, ItineraryMasterService>();*/
+options.UseSqlServer(builder.Configuration.GetConnectionString("ETourDbString")));
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("MyAllowSpecificOrigins",
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod();
+                                  });
+            });
+           
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
@@ -59,6 +51,7 @@ namespace ETourProject1
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
+
 
             app.MapControllers();
 

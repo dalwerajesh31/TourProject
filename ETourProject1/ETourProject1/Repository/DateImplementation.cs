@@ -36,43 +36,6 @@ namespace WebApplicationOneToMany.Models
             return date;
         }
 
-        public async Task<Date_Master> Update(int id, Date_Master date)
-        {
-            if (id != date.DepartureId)
-            {
-                return null;
-            }
-
-            context.Entry(date).State = EntityState.Modified;
-
-            try
-            {
-                await context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!DateMasterExists(id))
-                {
-                    return null;
-                }
-                else
-                {
-                    throw;
-                }
-            }
-            return date;
-        }
-
-        public async Task<Date_Master> Delete(int Id)
-        {
-            Date_Master date = await context.Date.FindAsync(Id);
-            if (date != null)
-            {
-                context.Date.Remove(date);
-                await context.SaveChangesAsync();
-            }
-            return date;
-        }
 
         private bool DateMasterExists(int id)
         {

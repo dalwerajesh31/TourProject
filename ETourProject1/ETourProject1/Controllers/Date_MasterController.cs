@@ -4,11 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+
 using ETourProject1.Models;
 using ETourProject1.Repository;
 using WebApplicationOneToMany.Models;
-using NuGet.Protocol.Core.Types;
 
 namespace ETourProject1.Controllers
 {
@@ -42,17 +41,12 @@ namespace ETourProject1.Controllers
             return date == null ? NotFound() : dateEntity ;
         }
 
-       
-
-        // POST: api/Date_Master
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-
         [HttpPost]
+
         public async Task<ActionResult<Date_Master>> Date_Master(Date_Master date)
         {
             await _context.Add(date);
             return CreatedAtAction("PostDate", new { id = date.DepartureId }, date);
         }
-       
     }
 }

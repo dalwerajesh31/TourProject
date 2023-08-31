@@ -3,6 +3,7 @@ using ETourProject1.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ETourProject1.Controllers
 {
@@ -20,9 +21,9 @@ namespace ETourProject1.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BookingHeader>?>> GetBookings()
         {
-            if(await _repository.GetAllBookings()==null)
+            if (await _repository.GetAllBookings() == null)
                 return NotFound();
-            return await _repository.GetAllBookings();  
+            return await _repository.GetAllBookings();
         }
 
         [HttpGet("id")]
@@ -39,43 +40,10 @@ namespace ETourProject1.Controllers
 
             return CreatedAtAction("PostEmployee", new { id = booking.bookingId }, booking);
         }
+        [ForeignKey(name: "DepartureId")]
+        public int DepartureId { get; set; }
 
-        [HttpDelete("id")]
-        public async Task<IActionResult> DeleteBooking(int id)
-        {
-            if (_repository.GetAllBookings() == null)
-                return NotFound();
-            await _repository.Delete(id);
+      //  public ICollection<Passanger_master> passanger_Masters { get; set; }
 
-            return Ok();
-
-        }
-
-        [HttpPut("{id}")]
-
-        public async Task<IActionResult> PutBooking(int id, BookingHeader booking)
-        {
-            if (id != booking.bookingId)
-                return BadRequest();
-
-            try
-            {
-                await _repository.Update(id, booking);
-
-            }
-
-            catch (DbUpdateConcurrencyException)
-            {
-
-                if (_repository.GetBooking(id) == null)
-                    return NotFound();
-
-                else
-                    throw;
-            }
-
-            return NoContent();
-
-        }
     }
 }

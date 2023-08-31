@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ETourProject1.Repository
 {
-    public class ItineraryRepository : Itinerary_Master
+    public class ItineraryRepository : Itinerary_MasterInterface
     {
         private readonly Appdbcontext _dbContext;
 
@@ -33,22 +33,6 @@ namespace ETourProject1.Repository
             _dbContext.SaveChanges();
         }
 
-        public void Update(Itinerary_Master itinerary)
-        {
-            _dbContext.Entry(itinerary).State = EntityState.Modified;
-            _dbContext.SaveChanges();
-        }
-
-        public void Delete(int id)
-        {
-            var itinerary = _dbContext.Itinerary_Master.Find(id);
-            if (itinerary != null)
-            {
-                _dbContext.Itinerary_Master.Remove(itinerary);
-                _dbContext.SaveChanges();
-            }
-        }
+      
     }
 }
-
-

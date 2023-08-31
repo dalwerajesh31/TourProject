@@ -21,18 +21,7 @@ namespace ETourProject1.Repository
             return cost;
         }
 
-        public async Task<Cost_Master> Delete(int Id)
-        {
-            Cost_Master cost = context.Cost.Find(Id);
-
-            if (cost != null)
-            {
-                context.Cost.Remove(cost);
-                await context.SaveChangesAsync();
-            }
-            return cost;
-        }
-
+      
         public async Task<ActionResult<IEnumerable<Cost_Master>>> GetAllCost()
         {
             if (context.Cost == null)
@@ -56,31 +45,7 @@ namespace ETourProject1.Repository
             return cost;
         }
 
-        public async Task<Cost_Master?> Update(int id, Cost_Master costchanges)
-        {
-            if (id != costchanges.CostId)
-            {
-                return null;
-            }
-            context.Entry(costchanges).State = EntityState.Modified;
-
-            try
-            {
-                await context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CostExists(id))
-                {
-                    return null;
-                }
-                else
-                {
-                    throw;
-                }
-            }
-            return null;
-        }
+      
 
         private bool CostExists(int id)
         {

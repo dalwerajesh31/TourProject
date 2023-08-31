@@ -20,7 +20,10 @@ namespace ETourProject1.Models
         [MaxLength(255)] // Adjust the max length as needed
         public string ItrDtl { get; set; }
 
-      /*  // Navigation property for the Package Master (assuming "Package" is the entity)
-        public virtual Package Package { get; set; }*/
+        [ForeignKey(name: "catMasterID")]
+        public int catMasterID { get; set; }
+
+        /*  // Navigation property for the Package Master (assuming "Package" is the entity)
+          public virtual Package Package { get; set; }*/
     }
 }

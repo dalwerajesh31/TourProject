@@ -1,6 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using ETourProject1.Models;
 
-using Microsoft.EntityFrameworkCore;
+
 
 namespace ETourProject1.Repository
 {
@@ -37,7 +38,7 @@ namespace ETourProject1.Repository
         public DbSet<Cost_Master> Cost { get; set; }
 
 
-
+        public DbSet<Category_Master> Category { get; set; }
 
 
         public DbSet<Date_Master> Date { get; set; }
