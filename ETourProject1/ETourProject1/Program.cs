@@ -1,11 +1,11 @@
 using ETourProject1.Repository;
-
+using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore;
 using System;
 
-using ETourProject1.Repository;
-using Microsoft.Build.Framework;
-using Microsoft.EntityFrameworkCore;
+
+
+
 
 namespace ETourProject1
 {

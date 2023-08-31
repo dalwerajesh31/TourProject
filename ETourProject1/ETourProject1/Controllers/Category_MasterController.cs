@@ -43,29 +43,6 @@ namespace ETourProject1.Controllers
             return category.Value;
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutCategory(int id, Category_Master category)
-        {
-            if (id != category.catMasterID)
-            {
-                return BadRequest();
-            }
-
-            try
-            {
-                var updatedCategory = await _repository.Update(id, category);
-                if (updatedCategory == null)
-                {
-                    return NotFound();
-                }
-
-                return NoContent();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                return NotFound();
-            }
-        }
 
         [HttpPost]
         public async Task<ActionResult<Category_Master>> PostCategory(Category_Master category)
@@ -74,16 +51,5 @@ namespace ETourProject1.Controllers
             return CreatedAtAction(nameof(GetById), new { id = addedCategory.Value.catMasterID }, addedCategory.Value);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCategory(int id)
-        {
-            var deletedCategory = await _repository.Delete(id);
-            if (deletedCategory == null)
-            {
-                return NotFound();
-            }
-
-            return NoContent();
-        }
     }
 }

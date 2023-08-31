@@ -1,4 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using ETourProject1.Models;
+
+
 
 namespace ETourProject1.Models
 {
@@ -14,5 +17,9 @@ namespace ETourProject1.Models
         public string catName { get; set; }
         [Required]
         public string catImagePath { get; set; }
+
+        public ICollection<Date_Master> categorydate { get; set; }
+        public ICollection<Package_master> categoryPackage { get; set; }
+        public ICollection<Itinerary_Master> categoryItinerary { get; set; }
     }
 }

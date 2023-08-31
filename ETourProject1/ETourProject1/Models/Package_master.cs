@@ -1,4 +1,7 @@
-﻿namespace ETourProject1.Models
+﻿
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ETourProject1.Models
 {
     public class Package_master
     {
@@ -9,5 +12,10 @@
         public ICollection<CostMaster> CostMaster { get; set; }
         public ICollection<Itinerary_Master> ItineraryMaster { get; set; }
         public ICollection<Date_Master> DateMaster { get; set; }
+
+        [ForeignKey(name: "catMasterID")]
+        public int catMasterID { get; set; }
+
+        public ICollection<Cost_Master> PackageCost { get; set; }
     }
 }

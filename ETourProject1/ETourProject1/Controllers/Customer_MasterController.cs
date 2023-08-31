@@ -50,36 +50,7 @@ namespace ETourProject1.Controllers
             return customer_Master;
         }
 
-        // PUT: api/Customer_Master/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutCustomer_Master(int id, Customer_Master customer_Master)
-        {
-            if (id != customer_Master.CustId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(customer_Master).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!Customer_MasterExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
+     
 
         // POST: api/Customer_Master
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -96,25 +67,6 @@ namespace ETourProject1.Controllers
             return CreatedAtAction("GetCustomer_Master", new { id = customer_Master.CustId }, customer_Master);
         }
 
-        // DELETE: api/Customer_Master/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCustomer_Master(int id)
-        {
-            if (_context.Customer_Master == null)
-            {
-                return NotFound();
-            }
-            var customer_Master = await _context.Customer_Master.FindAsync(id);
-            if (customer_Master == null)
-            {
-                return NotFound();
-            }
-
-            _context.Customer_Master.Remove(customer_Master);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
 
         private bool Customer_MasterExists(int id)
         {
