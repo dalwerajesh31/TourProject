@@ -47,6 +47,6 @@ namespace ETourProject1.Models
         public String PassWord { get; set; }
 
 
-       // public ICollection<BookingHeader> bookingHeaders { get; set; }
+        public ICollection<BookingHeader> bookingHeaders { get; set; }
     }
 }
