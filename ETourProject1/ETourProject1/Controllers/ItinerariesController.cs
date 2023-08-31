@@ -23,24 +23,24 @@ namespace ETourProject1.Controllers
 
         // GET: api/Itineraries
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Itinerary>>> GetItinerary()
+        public async Task<ActionResult<IEnumerable<Itinerary_Master>>> GetItinerary()
         {
-          if (_context.Itinerary == null)
+          if (_context.Itinerary_Master == null)
           {
               return NotFound();
           }
-            return await _context.Itinerary.ToListAsync();
+            return await _context.Itinerary_Master.ToListAsync();
         }
 
         // GET: api/Itineraries/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Itinerary>> GetItinerary(int id)
+        public async Task<ActionResult<Itinerary_Master>> GetItinerary(int id)
         {
-          if (_context.Itinerary == null)
+          if (_context.Itinerary_Master == null)
           {
               return NotFound();
           }
-            var itinerary = await _context.Itinerary.FindAsync(id);
+            var itinerary = await _context.Itinerary_Master.FindAsync(id);
 
             if (itinerary == null)
             {
@@ -53,7 +53,7 @@ namespace ETourProject1.Controllers
         // PUT: api/Itineraries/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutItinerary(int id, Itinerary itinerary)
+        public async Task<IActionResult> PutItinerary(int id, Itinerary_Master itinerary)
         {
             if (id != itinerary.ItrId)
             {
@@ -84,13 +84,13 @@ namespace ETourProject1.Controllers
         // POST: api/Itineraries
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Itinerary>> PostItinerary(Itinerary itinerary)
+        public async Task<ActionResult<Itinerary_Master>> PostItinerary(Itinerary_Master itinerary)
         {
-          if (_context.Itinerary == null)
+          if (_context.Itinerary_Master == null)
           {
               return Problem("Entity set 'Appdbcontext.Itinerary'  is null.");
           }
-            _context.Itinerary.Add(itinerary);
+            _context.Itinerary_Master.Add(itinerary);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetItinerary", new { id = itinerary.ItrId }, itinerary);
@@ -100,17 +100,17 @@ namespace ETourProject1.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteItinerary(int id)
         {
-            if (_context.Itinerary == null)
+            if (_context.Itinerary_Master == null)
             {
                 return NotFound();
             }
-            var itinerary = await _context.Itinerary.FindAsync(id);
+            var itinerary = await _context.Itinerary_Master.FindAsync(id);
             if (itinerary == null)
             {
                 return NotFound();
             }
 
-            _context.Itinerary.Remove(itinerary);
+            _context.Itinerary_Master.Remove(itinerary);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -118,7 +118,7 @@ namespace ETourProject1.Controllers
 
         private bool ItineraryExists(int id)
         {
-            return (_context.Itinerary?.Any(e => e.ItrId == id)).GetValueOrDefault();
+            return (_context.Itinerary_Master?.Any(e => e.ItrId == id)).GetValueOrDefault();
         }
     }
 }

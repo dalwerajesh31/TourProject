@@ -19,17 +19,17 @@ namespace ETourProject1.Repository
 
         public IEnumerable<Itinerary_Master> GetAll()
         {
-            return _dbContext.ItineraryMasters.ToList();
+            return _dbContext.Itinerary_Master.ToList();
         }
 
         public Itinerary_Master GetById(int id)
         {
-            return _dbContext.ItineraryMasters.Find(id);
+            return _dbContext.Itinerary_Master.Find(id);
         }
 
         public void Add(Itinerary_Master itinerary)
         {
-            _dbContext.ItineraryMasters.Add(itinerary);
+            _dbContext.Itinerary_Master.Add(itinerary);
             _dbContext.SaveChanges();
         }
 
@@ -41,10 +41,10 @@ namespace ETourProject1.Repository
 
         public void Delete(int id)
         {
-            var itinerary = _dbContext.ItineraryMasters.Find(id);
+            var itinerary = _dbContext.Itinerary_Master.Find(id);
             if (itinerary != null)
             {
-                _dbContext.ItineraryMasters.Remove(itinerary);
+                _dbContext.Itinerary_Master.Remove(itinerary);
                 _dbContext.SaveChanges();
             }
         }

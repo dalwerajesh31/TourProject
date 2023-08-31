@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj": {}
+    "C:\\Users\\MSIkh\\Desktop\\NetCore ETOURDB\\Backend Net\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj": {
+    "C:\\Users\\MSIkh\\Desktop\\NetCore ETOURDB\\Backend Net\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
+        "projectUniqueName": "C:\\Users\\MSIkh\\Desktop\\NetCore ETOURDB\\Backend Net\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
         "projectName": "ETourProject1",
-        "projectPath": "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
-        "packagesPath": "C:\\Users\\Nihal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nihal\\Desktop\\Project_Aug28\\TourProject\\ETourProject1\\ETourProject1\\obj\\",
+        "projectPath": "C:\\Users\\MSIkh\\Desktop\\NetCore ETOURDB\\Backend Net\\TourProject\\ETourProject1\\ETourProject1\\ETourProject1.csproj",
+        "packagesPath": "C:\\Users\\MSIkh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MSIkh\\Desktop\\NetCore ETOURDB\\Backend Net\\TourProject\\ETourProject1\\ETourProject1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MSIkh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
