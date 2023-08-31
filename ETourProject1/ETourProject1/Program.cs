@@ -7,6 +7,9 @@ using System;
 
 
 
+using ETourProject1.Repository;
+using Microsoft.EntityFrameworkCore;
+
 namespace ETourProject1
 {
     public class Program
@@ -15,10 +18,20 @@ namespace ETourProject1
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddControllers();
+
+            builder.Services.AddTransient<IBookingHeaderRepository, BookingHeaderRepository>();
+
             // Add services to the container.
+            builder.Services.AddDbContext<Appdbcontext>(options => 
+            options.UseSqlServer(builder.Configuration.GetConnectionString("ETourDbString")));
+
 
             builder.Services.AddDbContext<Appdbcontext>(options => 
             options.UseSqlServer(builder.Configuration.GetConnectionString("Cost_Master")));
+
+            builder.Services.AddDbContext<Appdbcontext>(options =>
+           options.UseSqlServer(builder.Configuration.GetConnectionString("Customer_Master")));
 
             builder.Services.AddDbContext<Category_dbcontext>(options =>
            options.UseSqlServer(builder.Configuration.GetConnectionString("Categorydb")));

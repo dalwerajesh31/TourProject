@@ -42,19 +42,6 @@ namespace ETourProject1.Controllers
             return cost == null ? NotFound() : cost;
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)         //Need to Revies
-        {
-            var cost = await _repository.GetCost(id);
-
-            if (cost == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(cost);
-        }
-
 
      
 
@@ -68,11 +55,27 @@ namespace ETourProject1.Controllers
             return CreatedAtAction("GetCost_Master", new { id = cost.CostId }, cost);
         }
 
+<<<<<<< HEAD
       
 
         /*private bool Cost_MasterExists(int id)           // Mark For Review
         {
             return (_repository.?.Any(e => e.CostId == id)).GetValueOrDefault();
         }*/
+=======
+        // DELETE: api/Cost_Master/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCost_Master(int id)
+        {
+            if (_repository.GetAllCost() == null)
+            {
+                return NotFound();
+            }
+
+            await _repository.Delete(id);
+
+            return Ok();
+        }
+>>>>>>> cf7cac16c48e3ea83265a88018206e5fd9fb91c1
     }
 }
